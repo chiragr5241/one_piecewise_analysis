@@ -52,9 +52,35 @@
 
         <div class="card">
             <h3>About This Analysis</h3>
-            <p>This visualization recreates the analysis from <a href="https://www.youtube.com/watch?v=j2T4gvQAiaE" target="_blank">Not David's video</a> on anime character networks. Characters are connected if they appear in the same episode. The <strong>friendship score</strong> between two characters is:</p>
-            <div class="formula">F<sub>ij</sub> = N<sub>ij</sub> / max(N<sub>i</sub>, N<sub>j</sub>)</div>
-            <p>where N<sub>ij</sub> is episodes they share, and N<sub>i</sub>, N<sub>j</sub> are their total episode counts. Data scraped from the <a href="https://onepiece.fandom.com" target="_blank">One Piece Wiki</a> using the MediaWiki API.</p>
+            <p>This visualization recreates the analysis from <a href="https://www.youtube.com/watch?v=j2T4gvQAiaE" target="_blank">Not David's video</a> on anime character networks. Characters are connected if they co-appear in at least one episode. Data scraped from the <a href="https://onepiece.fandom.com" target="_blank">One Piece Wiki</a> using the MediaWiki API.</p>
+
+            <div class="formula-block">
+                <h4>Edge Weight — Friendship Score</h4>
+                <p>For characters <em>i</em> and <em>j</em>, the friendship score is:</p>
+                <div class="formula">F<sub>ij</sub> = N<sub>ij</sub> / max(N<sub>i</sub>, N<sub>j</sub>)</div>
+                <p>where:</p>
+                <ul class="math-list">
+                    <li><strong>N<sub>ij</sub></strong> = |{e : a<sub>i</sub>(e) = 1 ∧ a<sub>j</sub>(e) = 1}| — number of episodes both appear in</li>
+                    <li><strong>N<sub>i</sub></strong> = Σ<sub>e</sub> a<sub>i</sub>(e) — total episodes character <em>i</em> appears in</li>
+                    <li><strong>max(N<sub>i</sub>, N<sub>j</sub>)</strong> — normalizes by the more prominent character's count</li>
+                </ul>
+                <p>This gives F<sub>ij</sub> ∈ [0, 1]. F<sub>ij</sub> = 1 means every time the more active character appears, the other is always present too.</p>
+            </div>
+
+            <div class="formula-block">
+                <h4>Degree Distribution</h4>
+                <p>The <strong>degree</strong> k<sub>i</sub> of a character is the number of other characters they share at least one episode with.
+                The histogram shows the probability P(k) that a randomly chosen character has degree k. One Piece's network is
+                near-complete (mean degree ≈ 176), reflecting the interconnected nature of the story — most characters eventually
+                share an episode with many others through flashbacks and ensemble scenes.</p>
+            </div>
+
+            <div class="formula-block">
+                <h4>Top Pairs (Friendship Score)</h4>
+                <p>The table shows character pairs with the highest F<sub>ij</sub> values (filtered to ≥10 co-appearances to exclude
+                trivial pairs). A pair scoring F = 1.0 with many co-appearances indicates characters that are truly
+                inseparable — one never appears without the other.</p>
+            </div>
         </div>
     </section>
 
@@ -112,6 +138,30 @@
             </div>
         </div>
         <div id="graph-status" class="status-bar">Ready</div>
+        <div class="card" style="margin-top:16px">
+            <h3>Network Construction Details</h3>
+            <div class="formula-block">
+                <h4>Graph Definition</h4>
+                <p>The network is an undirected weighted graph G = (V, E, w) where:</p>
+                <ul class="math-list">
+                    <li><strong>V</strong> = set of all characters (|V| = 1,111)</li>
+                    <li><strong>E</strong> = {(i,j) : N<sub>ij</sub> > 0} — an edge exists if two characters ever co-appear</li>
+                    <li><strong>w(i,j)</strong> = F<sub>ij</sub> = N<sub>ij</sub> / max(N<sub>i</sub>, N<sub>j</sub>) — edge weight is the friendship score</li>
+                </ul>
+            </div>
+            <div class="formula-block">
+                <h4>Edge Threshold Filtering</h4>
+                <p>The full graph has 97,930 edges — too dense to visualize. We apply a threshold τ and only display edges where F<sub>ij</sub> ≥ τ.
+                Higher thresholds show only the strongest relationships; lower thresholds reveal weaker but still meaningful connections.</p>
+                <div class="formula">E<sub>τ</sub> = {(i,j) ∈ E : F<sub>ij</sub> ≥ τ}</div>
+            </div>
+            <div class="formula-block">
+                <h4>Layout Algorithm</h4>
+                <p>The <strong>force-directed (CoSE)</strong> layout simulates a physical system: nodes repel each other (Coulomb's law)
+                while edges act as springs (Hooke's law). The system converges to an equilibrium where connected nodes cluster together
+                and disconnected groups separate naturally. This reveals the community structure without any prior knowledge of factions or arcs.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Character Raster Section -->
@@ -128,11 +178,37 @@
                     <option value="50" selected>50 characters</option>
                     <option value="100">100 characters</option>
                     <option value="200">200 characters</option>
+                    <option value="500">500 characters</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Cell size:</label>
+                <select id="raster-cell-size">
+                    <option value="2">Tiny (2px)</option>
+                    <option value="4" selected>Normal (4px)</option>
+                    <option value="6">Large (6px)</option>
                 </select>
             </div>
         </div>
-        <div class="card">
-            <canvas id="raster-canvas"></canvas>
+        <div class="card" id="raster-math-card">
+            <h3>Character Appearance Raster</h3>
+            <p>Each row is a character, each column is an episode. A colored cell means the character appeared in that episode.
+            Characters are sorted by total episode count (descending). This is the same visualization from
+            <a href="https://www.youtube.com/watch?v=RIZnwhV5ooY" target="_blank">Not David's video</a>, showing the
+            characteristic triangular shape of serialized storytelling — new characters accumulate over time, but earlier
+            characters keep reappearing.</p>
+            <div class="formula-block">
+                <strong>Data collection:</strong> For each episode <em>e</em>, we scrape the "Characters in Order of Appearance" section
+                from the One Piece Wiki. For character <em>i</em>, define the <strong>appearance vector</strong>:
+                <div class="formula">a<sub>i</sub>(e) = 1 if character <em>i</em> appears in episode <em>e</em>, else 0</div>
+                The raster is the binary matrix <strong>A</strong> ∈ {0,1}<sup>N×E</sup> where N = number of characters and E = number of episodes.
+                The <strong>total appearances</strong> of character <em>i</em> are: N<sub>i</sub> = Σ<sub>e</sub> a<sub>i</sub>(e).
+            </div>
+        </div>
+        <div class="card raster-scroll-container">
+            <div id="raster-wrapper">
+                <canvas id="raster-canvas"></canvas>
+            </div>
         </div>
         <div id="raster-tooltip" class="tooltip hidden"></div>
     </section>
@@ -142,6 +218,19 @@
         <div class="card">
             <h3>Community Detection (Louvain Algorithm)</h3>
             <p>The network was partitioned into communities using the Louvain method, which maximizes modularity. Each community roughly corresponds to a story arc or faction grouping.</p>
+            <div class="formula-block">
+                <h4>Modularity</h4>
+                <p>The Louvain algorithm maximizes the <strong>modularity</strong> Q, which measures how much more densely connected nodes within communities are compared to a random graph with the same degree sequence:</p>
+                <div class="formula">Q = (1/2m) Σ<sub>ij</sub> [A<sub>ij</sub> − (k<sub>i</sub>k<sub>j</sub>)/(2m)] · δ(c<sub>i</sub>, c<sub>j</sub>)</div>
+                <p>where:</p>
+                <ul class="math-list">
+                    <li><strong>A<sub>ij</sub></strong> = weighted adjacency (F<sub>ij</sub> if edge exists, 0 otherwise)</li>
+                    <li><strong>m</strong> = (1/2) Σ<sub>ij</sub> A<sub>ij</sub> — total edge weight</li>
+                    <li><strong>k<sub>i</sub></strong> = Σ<sub>j</sub> A<sub>ij</sub> — weighted degree (strength) of node <em>i</em></li>
+                    <li><strong>δ(c<sub>i</sub>, c<sub>j</sub>)</strong> = 1 if nodes <em>i</em> and <em>j</em> are in the same community, else 0</li>
+                </ul>
+                <p>Q ranges from −0.5 to 1. A Q of <strong>0.563</strong> indicates strong community structure — characters cluster tightly by story arc.</p>
+            </div>
         </div>
         <div id="communities-grid" class="communities-grid"></div>
     </section>
@@ -172,6 +261,34 @@
                 <div id="metric-explanation"></div>
             </div>
         </div>
+        <div class="card">
+            <h3>Centrality Measures — Mathematical Definitions</h3>
+            <div class="formula-block">
+                <h4>Degree Centrality</h4>
+                <p>The fraction of all other nodes a character is connected to:</p>
+                <div class="formula">C<sub>D</sub>(i) = k<sub>i</sub> / (N − 1)</div>
+                <p>where k<sub>i</sub> is the number of characters that share at least one episode with character <em>i</em>, and N is the total character count.</p>
+            </div>
+            <div class="formula-block">
+                <h4>Betweenness Centrality</h4>
+                <p>The fraction of all shortest paths in the network that pass through a given character:</p>
+                <div class="formula">C<sub>B</sub>(i) = Σ<sub>s≠i≠t</sub> [σ<sub>st</sub>(i) / σ<sub>st</sub>] / [(N−1)(N−2)/2]</div>
+                <p>where σ<sub>st</sub> is the number of shortest paths from <em>s</em> to <em>t</em>, and σ<sub>st</sub>(i) is the number of those paths passing through <em>i</em>.
+                High betweenness = a <strong>bridge</strong> connecting otherwise distant groups (e.g., a character who appears in multiple story arcs).</p>
+            </div>
+            <div class="formula-block">
+                <h4>Eigenvector Centrality</h4>
+                <p>A recursive measure: a character is important if connected to other important characters. Defined as the leading eigenvector of the adjacency matrix:</p>
+                <div class="formula">A · x = λ<sub>max</sub> · x, &nbsp;&nbsp; C<sub>E</sub>(i) = x<sub>i</sub></div>
+                <p>where <strong>A</strong> is the weighted adjacency matrix and λ<sub>max</sub> is its largest eigenvalue. This captures "inner circle" importance — Straw Hats rank high because they are connected to each other AND to many other well-connected characters.</p>
+            </div>
+            <div class="formula-block">
+                <h4>Clustering Coefficient</h4>
+                <p>How much a character's neighbors are also neighbors of each other:</p>
+                <div class="formula">C<sub>C</sub>(i) = 2T(i) / [k<sub>i</sub>(k<sub>i</sub> − 1)]</div>
+                <p>where T(i) is the number of triangles through node <em>i</em>. Low clustering (0.056 average) reflects the hub-and-spoke nature of One Piece: the Straw Hats connect many characters who don't otherwise co-appear.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Character Explorer Section -->
@@ -197,7 +314,24 @@
             </div>
             <div class="card">
                 <h3>Ego Network</h3>
+                <p class="card-desc">The <strong>ego network</strong> (or 1-hop neighborhood) of a character shows all characters directly connected to them, plus any edges between those neighbors. It reveals which of a character's connections also know each other.</p>
                 <div id="ego-cy" style="height:500px;border-radius:8px;"></div>
+            </div>
+            <div class="card">
+                <h3>Explorer — How the Metrics Work</h3>
+                <div class="formula-block">
+                    <h4>Episode Timeline</h4>
+                    <p>The bar chart bins the character's appearances into groups of 5 episodes, showing the <strong>density</strong>
+                    of appearances over time. Mathematically, for bin <em>b</em> starting at episode 5b+1:</p>
+                    <div class="formula">count(b) = Σ<sub>e=5b+1</sub><sup>5b+5</sup> a<sub>i</sub>(e)</div>
+                    <p>Gaps in the timeline indicate arcs where the character is absent (e.g., Straw Hats during Impel Down/Marineford).</p>
+                </div>
+                <div class="formula-block">
+                    <h4>Strongest Connections</h4>
+                    <p>Ranked by friendship score F<sub>ij</sub>. The "Shared Eps" column shows the raw co-appearance count N<sub>ij</sub>.
+                    A high F with high N<sub>ij</sub> means a genuine narrative bond; a high F with low N<sub>ij</sub> may just reflect
+                    two minor characters who happen to only appear together.</p>
+                </div>
             </div>
         </div>
     </section>

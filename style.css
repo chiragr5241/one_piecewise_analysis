@@ -294,9 +294,65 @@ tr:hover td { background: var(--bg-card-hover); }
     color: var(--accent);
 }
 
+.formula-block {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 16px 0;
+}
+.formula-block h4 {
+    color: var(--accent3);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.formula-block p {
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+.formula-block .formula {
+    margin: 12px 0;
+}
+.math-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 12px 0;
+}
+.math-list li {
+    color: var(--text-dim);
+    font-size: 13px;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    line-height: 1.7;
+}
+.math-list li::before {
+    content: '•';
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+.card-desc {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
 /* Raster Canvas */
+.raster-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    padding: 12px;
+}
+#raster-wrapper {
+    display: inline-block;
+    min-width: 100%;
+}
 #raster-canvas {
-    width: 100%;
+    display: block;
     cursor: crosshair;
 }
 

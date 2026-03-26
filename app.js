@@ -216,7 +216,7 @@ function buildGraph(threshold, minEps) {
                 selector: 'edge',
                 style: {
                     'width': 'mapData(weight, 0, 1, 0.3, 3)',
-                    'line-color': 'rgba(255,255,255,0.08)',
+                    'line-color': 'rgba(255,255,255,0.8)',
                     'curve-style': 'haystack',
                 }
             },
@@ -408,98 +408,121 @@ function showNodeInfo(data) {
 }
 
 // ---- Character Raster ----
+let _rasterNodes = null; // cached for tooltip
+let _rasterCellW = 4;
+let _rasterCellH = 12;
+let _rasterLabelW = 180;
+let _rasterMaxEp = 1156;
+
 function drawRaster() {
     const canvas = document.getElementById('raster-canvas');
     const ctx = canvas.getContext('2d');
     const search = document.getElementById('raster-search').value.toLowerCase();
     const count = parseInt(document.getElementById('raster-count').value);
+    const cellW = parseInt(document.getElementById('raster-cell-size').value);
+    const cellH = Math.max(cellW * 3, 10);
+    const labelW = 180;
 
-    // Filter & sort nodes
+    // Filter & sort nodes (already sorted by episodes desc from data)
     let nodes = [...DATA.nodes];
     if (search) {
-        nodes = nodes.filter(n => n.label.toLowerCase().includes(search));
+        nodes = nodes.filter(n => n.id.toLowerCase().includes(search));
     }
     nodes = nodes.slice(0, count);
+    _rasterNodes = nodes;
+    _rasterCellW = cellW;
+    _rasterCellH = cellH;
+    _rasterLabelW = labelW;
 
     const maxEp = Math.max(...Object.values(RASTER).flat());
-    const cellW = 4;
-    const cellH = 12;
-    const labelW = 180;
-    const width = labelW + maxEp * cellW + 20;
+    _rasterMaxEp = maxEp;
+    const width = labelW + maxEp * cellW + 40;
     const height = nodes.length * cellH + 60;
 
-    canvas.width = width * 2; // HiDPI
-    canvas.height = height * 2;
+    // Set canvas to full size (not constrained by container)
+    const dpr = window.devicePixelRatio || 2;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
-    ctx.scale(2, 2);
+    ctx.scale(dpr, dpr);
 
     // Background
     ctx.fillStyle = '#0a0a0f';
     ctx.fillRect(0, 0, width, height);
 
-    // Draw each character row
-    nodes.forEach((node, i) => {
-        const y = i * cellH + 40;
-        // Label
-        ctx.fillStyle = node.community_color || '#888';
-        ctx.font = '9px Inter, sans-serif';
-        ctx.textAlign = 'right';
-        ctx.fillText(node.label, labelW - 8, y + cellH - 2);
-
-        // Episodes
-        const eps = RASTER[node.id] || [];
-        eps.forEach(ep => {
-            const x = labelW + (ep - 1) * cellW;
-            ctx.fillStyle = node.community_color || '#00bfff';
-            ctx.fillRect(x, y, cellW - 1, cellH - 1);
-        });
-    });
-
-    // Episode axis
+    // Draw episode axis at top
     ctx.fillStyle = '#888';
     ctx.font = '9px Inter, sans-serif';
     ctx.textAlign = 'center';
-    for (let ep = 100; ep <= maxEp; ep += 100) {
+    for (let ep = 50; ep <= maxEp; ep += 50) {
         const x = labelW + (ep - 1) * cellW;
         ctx.fillText(ep.toString(), x, 32);
+        // Subtle gridline
+        ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+        ctx.beginPath();
+        ctx.moveTo(x, 38);
+        ctx.lineTo(x, height);
+        ctx.stroke();
     }
 
     // Title
     ctx.fillStyle = '#e0e0e8';
     ctx.font = 'bold 12px Inter, sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText(`Character Appearances (top ${nodes.length})`, labelW, 16);
+    ctx.fillText(`Character Appearances — ${nodes.length} characters × ${maxEp} episodes`, labelW, 16);
 
-    // Setup listeners
+    // Draw each character row
+    nodes.forEach((node, i) => {
+        const y = i * cellH + 40;
+
+        // Alternating row background
+        if (i % 2 === 0) {
+            ctx.fillStyle = 'rgba(255,255,255,0.015)';
+            ctx.fillRect(0, y, width, cellH);
+        }
+
+        // Label (use id = page name)
+        ctx.fillStyle = node.community_color || '#888';
+        ctx.font = `${Math.min(cellH - 2, 11)}px Inter, sans-serif`;
+        ctx.textAlign = 'right';
+        const displayName = node.id.length > 22 ? node.id.substring(0, 20) + '...' : node.id;
+        ctx.fillText(displayName, labelW - 8, y + cellH - 2);
+
+        // Episodes — draw as colored cells
+        const eps = RASTER[node.id] || [];
+        ctx.fillStyle = node.community_color || '#00bfff';
+        eps.forEach(ep => {
+            const x = labelW + (ep - 1) * cellW;
+            ctx.fillRect(x, y, cellW - 1, cellH - 1);
+        });
+    });
+
+    // Setup listeners once
     if (!canvas._listenersSet) {
         canvas._listenersSet = true;
         document.getElementById('raster-search').addEventListener('input', () => drawRaster());
         document.getElementById('raster-count').addEventListener('change', () => drawRaster());
+        document.getElementById('raster-cell-size').addEventListener('change', () => drawRaster());
 
         // Tooltip on hover
         canvas.addEventListener('mousemove', (e) => {
             const rect = canvas.getBoundingClientRect();
+            const scrollContainer = canvas.closest('.raster-scroll-container');
             const x = (e.clientX - rect.left);
             const y = (e.clientY - rect.top);
-            const charIdx = Math.floor((y - 40) / cellH);
-            const ep = Math.floor((x - labelW) / cellW) + 1;
+            const charIdx = Math.floor((y - 40) / _rasterCellH);
+            const ep = Math.floor((x - _rasterLabelW) / _rasterCellW) + 1;
             const tooltip = document.getElementById('raster-tooltip');
 
-            const currentCount = parseInt(document.getElementById('raster-count').value);
-            let currentNodes = [...DATA.nodes];
-            const currentSearch = document.getElementById('raster-search').value.toLowerCase();
-            if (currentSearch) currentNodes = currentNodes.filter(n => n.label.toLowerCase().includes(currentSearch));
-            currentNodes = currentNodes.slice(0, currentCount);
-
-            if (charIdx >= 0 && charIdx < currentNodes.length && ep > 0 && ep <= maxEp) {
-                const node = currentNodes[charIdx];
+            if (_rasterNodes && charIdx >= 0 && charIdx < _rasterNodes.length && ep > 0 && ep <= _rasterMaxEp) {
+                const node = _rasterNodes[charIdx];
                 const eps = RASTER[node.id] || [];
                 const appears = eps.includes(ep);
                 tooltip.classList.remove('hidden');
                 tooltip.style.left = (e.clientX + 12) + 'px';
                 tooltip.style.top = (e.clientY - 10) + 'px';
-                tooltip.innerHTML = `<strong>${node.label}</strong><br>Episode ${ep}<br>${appears ? '✓ Appears' : '✗ Does not appear'}`;
+                tooltip.innerHTML = `<strong>${node.id}</strong><br>Episode ${ep} · ${node.episodes} total eps<br>${appears ? '<span style="color:#6bcb77">&#10003; Appears</span>' : '<span style="color:#ff6b6b">&#10007; Does not appear</span>'}`;
             } else {
                 tooltip.classList.add('hidden');
             }
@@ -591,10 +614,22 @@ function renderRankings() {
 
     // Explanation
     const explanations = {
-        by_episodes: `<h4>Episode Count</h4><p>The total number of episodes a character appears in. This is the simplest measure of character importance — characters who appear more frequently are generally more central to the story.</p><p>Luffy naturally tops this list as the protagonist, followed by the rest of the Straw Hat crew.</p>`,
-        by_degree: `<h4>Degree (Number of Connections)</h4><p>How many other characters a character has shared at least one episode with. A high degree means the character has interacted with many different characters throughout the series.</p><p>Characters with high degree but relatively fewer episodes are often "bridge" characters who appear across multiple story arcs.</p>`,
-        by_betweenness: `<h4>Betweenness Centrality</h4><p>Measures how often a character lies on the shortest path between other characters. Characters with high betweenness serve as <strong>bridges</strong> connecting different parts of the network.</p><p>A character can have high betweenness even with moderate episode count if they uniquely connect otherwise separate groups of characters.</p>`,
-        by_eigenvector: `<h4>Eigenvector Centrality</h4><p>A character scores high not just by having many connections, but by being connected to other <strong>well-connected</strong> characters. It captures the idea of being in the "inner circle" of the network.</p><p>The Straw Hat crew members tend to rank highest because they are all connected to each other AND to many important characters.</p>`,
+        by_episodes: `<h4>Episode Count — N<sub>i</sub></h4>
+            <p>The total number of episodes a character appears in: <strong>N<sub>i</sub> = Σ<sub>e</sub> a<sub>i</sub>(e)</strong></p>
+            <p>This is the simplest measure of prominence. Luffy tops the list with 1,098 episodes — he's absent from fewer than 60 total.</p>
+            <p>The Straw Hats dominate here, but note some characters like Nico Robin and Jinbe rank lower than their narrative importance might suggest — they joined the crew later, so their raw count is lower.</p>`,
+        by_degree: `<h4>Degree — k<sub>i</sub></h4>
+            <p><strong>k<sub>i</sub> = |{j : N<sub>ij</sub> > 0}|</strong> — the count of distinct characters that share at least one episode with character <em>i</em>.</p>
+            <p>Degree centrality normalizes this: <strong>C<sub>D</sub>(i) = k<sub>i</sub> / (N − 1)</strong>.</p>
+            <p>Luffy's degree of 1,109 means he has co-appeared with virtually every character in the series. Characters with high degree but moderate episode count (like Buggy) are "connectors" who bridge many story arcs.</p>`,
+        by_betweenness: `<h4>Betweenness — C<sub>B</sub>(i)</h4>
+            <p><strong>C<sub>B</sub>(i) = Σ<sub>s≠i≠t</sub> σ<sub>st</sub>(i) / σ<sub>st</sub></strong>, normalized by (N−1)(N−2)/2.</p>
+            <p>This measures how often a character lies on shortest paths between other characters. High betweenness = a bridge between otherwise disconnected groups.</p>
+            <p>A character can have high betweenness with moderate episode count if they uniquely link separate story arcs. The Straw Hats naturally rank high because they travel between many otherwise isolated communities.</p>`,
+        by_eigenvector: `<h4>Eigenvector — C<sub>E</sub>(i)</h4>
+            <p>Defined by the eigenvalue equation: <strong>A · x = λ<sub>max</sub> · x</strong>, where C<sub>E</sub>(i) = x<sub>i</sub>.</p>
+            <p>A character scores high not just by having many connections, but by being connected to other <strong>well-connected</strong> characters. It's recursive: your importance depends on the importance of your neighbors.</p>
+            <p>Interestingly, this metric can elevate characters who aren't Straw Hats but are deeply embedded in important clusters (e.g., Whitebeard's crew members).</p>`,
     };
     document.getElementById('metric-explanation').innerHTML = explanations[metric] || '';
 
