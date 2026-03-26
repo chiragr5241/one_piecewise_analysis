@@ -411,12 +411,13 @@ function showNodeInfo(data) {
 let _rasterNodes = null; // cached for tooltip
 let _rasterCellW = 4;
 let _rasterCellH = 12;
-let _rasterLabelW = 180;
 let _rasterMaxEp = 1156;
 
 function drawRaster() {
-    const canvas = document.getElementById('raster-canvas');
-    const ctx = canvas.getContext('2d');
+    const dataCanvas = document.getElementById('raster-canvas');
+    const labelCanvas = document.getElementById('raster-labels-canvas');
+    const dataCtx = dataCanvas.getContext('2d');
+    const labelCtx = labelCanvas.getContext('2d');
     const search = document.getElementById('raster-search').value.toLowerCase();
     const count = parseInt(document.getElementById('raster-count').value);
     const cellW = parseInt(document.getElementById('raster-cell-size').value);
@@ -432,87 +433,117 @@ function drawRaster() {
     _rasterNodes = nodes;
     _rasterCellW = cellW;
     _rasterCellH = cellH;
-    _rasterLabelW = labelW;
 
     const maxEp = Math.max(...Object.values(RASTER).flat());
     _rasterMaxEp = maxEp;
-    const width = labelW + maxEp * cellW + 40;
+    const dataWidth = maxEp * cellW + 40;
     const height = nodes.length * cellH + 60;
-
-    // Set canvas to full size (not constrained by container)
     const dpr = window.devicePixelRatio || 2;
-    canvas.width = width * dpr;
-    canvas.height = height * dpr;
-    canvas.style.width = width + 'px';
-    canvas.style.height = height + 'px';
-    ctx.scale(dpr, dpr);
 
-    // Background
-    ctx.fillStyle = '#0a0a0f';
-    ctx.fillRect(0, 0, width, height);
+    // --- Labels canvas (fixed left column) ---
+    labelCanvas.width = labelW * dpr;
+    labelCanvas.height = height * dpr;
+    labelCanvas.style.width = labelW + 'px';
+    labelCanvas.style.height = height + 'px';
+    labelCtx.scale(dpr, dpr);
 
-    // Draw episode axis at top
-    ctx.fillStyle = '#888';
-    ctx.font = '9px Inter, sans-serif';
-    ctx.textAlign = 'center';
-    for (let ep = 50; ep <= maxEp; ep += 50) {
-        const x = labelW + (ep - 1) * cellW;
-        ctx.fillText(ep.toString(), x, 32);
-        // Subtle gridline
-        ctx.strokeStyle = 'rgba(255,255,255,0.03)';
-        ctx.beginPath();
-        ctx.moveTo(x, 38);
-        ctx.lineTo(x, height);
-        ctx.stroke();
-    }
+    labelCtx.fillStyle = '#12121a';
+    labelCtx.fillRect(0, 0, labelW, height);
 
-    // Title
-    ctx.fillStyle = '#e0e0e8';
-    ctx.font = 'bold 12px Inter, sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText(`Character Appearances — ${nodes.length} characters × ${maxEp} episodes`, labelW, 16);
+    // Title area on labels side
+    labelCtx.fillStyle = '#e0e0e8';
+    labelCtx.font = 'bold 11px Inter, sans-serif';
+    labelCtx.textAlign = 'right';
+    labelCtx.fillText('Character', labelW - 8, 16);
 
-    // Draw each character row
     nodes.forEach((node, i) => {
         const y = i * cellH + 40;
 
-        // Alternating row background
+        // Alternating row bg
         if (i % 2 === 0) {
-            ctx.fillStyle = 'rgba(255,255,255,0.015)';
-            ctx.fillRect(0, y, width, cellH);
+            labelCtx.fillStyle = 'rgba(255,255,255,0.015)';
+            labelCtx.fillRect(0, y, labelW, cellH);
         }
 
-        // Label (use id = page name)
-        ctx.fillStyle = node.community_color || '#888';
-        ctx.font = `${Math.min(cellH - 2, 11)}px Inter, sans-serif`;
-        ctx.textAlign = 'right';
+        // Character name
+        labelCtx.fillStyle = node.community_color || '#888';
+        labelCtx.font = `${Math.min(cellH - 2, 11)}px Inter, sans-serif`;
+        labelCtx.textAlign = 'right';
         const displayName = node.id.length > 22 ? node.id.substring(0, 20) + '...' : node.id;
-        ctx.fillText(displayName, labelW - 8, y + cellH - 2);
+        labelCtx.fillText(displayName, labelW - 8, y + cellH - 2);
+    });
 
-        // Episodes — draw as colored cells
+    // Right edge line on labels
+    labelCtx.strokeStyle = 'rgba(255,255,255,0.08)';
+    labelCtx.beginPath();
+    labelCtx.moveTo(labelW - 0.5, 0);
+    labelCtx.lineTo(labelW - 0.5, height);
+    labelCtx.stroke();
+
+    // --- Data canvas (scrollable episodes) ---
+    dataCanvas.width = dataWidth * dpr;
+    dataCanvas.height = height * dpr;
+    dataCanvas.style.width = dataWidth + 'px';
+    dataCanvas.style.height = height + 'px';
+    dataCtx.scale(dpr, dpr);
+
+    dataCtx.fillStyle = '#0a0a0f';
+    dataCtx.fillRect(0, 0, dataWidth, height);
+
+    // Episode axis at top
+    dataCtx.fillStyle = '#888';
+    dataCtx.font = '9px Inter, sans-serif';
+    dataCtx.textAlign = 'center';
+    for (let ep = 50; ep <= maxEp; ep += 50) {
+        const x = (ep - 1) * cellW;
+        dataCtx.fillText(ep.toString(), x, 32);
+        // Subtle gridline
+        dataCtx.strokeStyle = 'rgba(255,255,255,0.03)';
+        dataCtx.beginPath();
+        dataCtx.moveTo(x, 38);
+        dataCtx.lineTo(x, height);
+        dataCtx.stroke();
+    }
+
+    // Title on data side
+    dataCtx.fillStyle = '#e0e0e8';
+    dataCtx.font = 'bold 11px Inter, sans-serif';
+    dataCtx.textAlign = 'left';
+    dataCtx.fillText(`${nodes.length} characters \u00d7 ${maxEp} episodes`, 4, 16);
+
+    // Draw each character's episode data
+    nodes.forEach((node, i) => {
+        const y = i * cellH + 40;
+
+        // Alternating row bg
+        if (i % 2 === 0) {
+            dataCtx.fillStyle = 'rgba(255,255,255,0.015)';
+            dataCtx.fillRect(0, y, dataWidth, cellH);
+        }
+
+        // Episode cells
         const eps = RASTER[node.id] || [];
-        ctx.fillStyle = node.community_color || '#00bfff';
+        dataCtx.fillStyle = node.community_color || '#00bfff';
         eps.forEach(ep => {
-            const x = labelW + (ep - 1) * cellW;
-            ctx.fillRect(x, y, cellW - 1, cellH - 1);
+            const x = (ep - 1) * cellW;
+            dataCtx.fillRect(x, y, cellW - 1, cellH - 1);
         });
     });
 
     // Setup listeners once
-    if (!canvas._listenersSet) {
-        canvas._listenersSet = true;
+    if (!dataCanvas._listenersSet) {
+        dataCanvas._listenersSet = true;
         document.getElementById('raster-search').addEventListener('input', () => drawRaster());
         document.getElementById('raster-count').addEventListener('change', () => drawRaster());
         document.getElementById('raster-cell-size').addEventListener('change', () => drawRaster());
 
-        // Tooltip on hover
-        canvas.addEventListener('mousemove', (e) => {
-            const rect = canvas.getBoundingClientRect();
-            const scrollContainer = canvas.closest('.raster-scroll-container');
+        // Tooltip on hover over data canvas
+        dataCanvas.addEventListener('mousemove', (e) => {
+            const rect = dataCanvas.getBoundingClientRect();
             const x = (e.clientX - rect.left);
             const y = (e.clientY - rect.top);
             const charIdx = Math.floor((y - 40) / _rasterCellH);
-            const ep = Math.floor((x - _rasterLabelW) / _rasterCellW) + 1;
+            const ep = Math.floor(x / _rasterCellW) + 1;
             const tooltip = document.getElementById('raster-tooltip');
 
             if (_rasterNodes && charIdx >= 0 && charIdx < _rasterNodes.length && ep > 0 && ep <= _rasterMaxEp) {
@@ -522,12 +553,34 @@ function drawRaster() {
                 tooltip.classList.remove('hidden');
                 tooltip.style.left = (e.clientX + 12) + 'px';
                 tooltip.style.top = (e.clientY - 10) + 'px';
-                tooltip.innerHTML = `<strong>${node.id}</strong><br>Episode ${ep} · ${node.episodes} total eps<br>${appears ? '<span style="color:#6bcb77">&#10003; Appears</span>' : '<span style="color:#ff6b6b">&#10007; Does not appear</span>'}`;
+                tooltip.innerHTML = `<strong>${node.id}</strong><br>Episode ${ep} \u00b7 ${node.episodes} total eps<br>${appears ? '<span style="color:#6bcb77">&#10003; Appears</span>' : '<span style="color:#ff6b6b">&#10007; Does not appear</span>'}`;
             } else {
                 tooltip.classList.add('hidden');
             }
         });
-        canvas.addEventListener('mouseleave', () => {
+        dataCanvas.addEventListener('mouseleave', () => {
+            document.getElementById('raster-tooltip').classList.add('hidden');
+        });
+
+        // Also show tooltip on label hover
+        labelCanvas.addEventListener('mousemove', (e) => {
+            const rect = labelCanvas.getBoundingClientRect();
+            const y = (e.clientY - rect.top);
+            const charIdx = Math.floor((y - 40) / _rasterCellH);
+            const tooltip = document.getElementById('raster-tooltip');
+
+            if (_rasterNodes && charIdx >= 0 && charIdx < _rasterNodes.length) {
+                const node = _rasterNodes[charIdx];
+                const eps = RASTER[node.id] || [];
+                tooltip.classList.remove('hidden');
+                tooltip.style.left = (e.clientX + 12) + 'px';
+                tooltip.style.top = (e.clientY - 10) + 'px';
+                tooltip.innerHTML = `<strong>${node.id}</strong><br>${eps.length} episodes<br>Faction: ${node.faction}`;
+            } else {
+                tooltip.classList.add('hidden');
+            }
+        });
+        labelCanvas.addEventListener('mouseleave', () => {
             document.getElementById('raster-tooltip').classList.add('hidden');
         });
     }
