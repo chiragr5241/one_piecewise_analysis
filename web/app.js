@@ -44,8 +44,10 @@ function setupNav() {
             btn.classList.add('active');
             const section = document.getElementById(btn.dataset.section);
             section.classList.add('active');
-            // Lazy init
-            if (btn.dataset.section === 'network' && !cy) initGraph();
+            // Lazy init — defer graph init so the section renders first
+            if (btn.dataset.section === 'network' && !cy) {
+                setTimeout(() => initGraph(), 0);
+            }
             if (btn.dataset.section === 'raster') drawRaster();
         });
     });
@@ -287,10 +289,6 @@ function buildGraph(threshold, minEps) {
         wheelSensitivity: 0.3,
         maxZoom: 10,
         minZoom: 0.1,
-        textureOnViewport: true,
-        hideEdgesOnViewport: true,
-        hideLabelsOnViewport: true,
-        pixelRatio: 1,
     });
 
     // Node click handler
