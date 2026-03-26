@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Character Network Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2>Loading One Piece Network Data...</h2>
+            <p id="loading-status">Fetching network data...</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>One Piece Character Network</h1>
+            <p class="subtitle">Interactive analysis of 1,111 characters across 1,156 episodes</p>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <button class="nav-btn active" data-section="overview">Overview</button>
+        <button class="nav-btn" data-section="network">Network Graph</button>
+        <button class="nav-btn" data-section="raster">Character Raster</button>
+        <button class="nav-btn" data-section="communities">Communities</button>
+        <button class="nav-btn" data-section="rankings">Rankings</button>
+        <button class="nav-btn" data-section="explorer">Character Explorer</button>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section active">
+        <div class="stats-grid" id="stats-grid"></div>
+
+        <div class="two-col">
+            <div class="card">
+                <h3>Degree Distribution</h3>
+                <canvas id="degree-chart"></canvas>
+            </div>
+            <div class="card">
+                <h3>Top Character Pairs (Friendship Score)</h3>
+                <div id="top-pairs-table" class="table-container"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>About This Analysis</h3>
+            <p>This visualization recreates the analysis from <a href="https://www.youtube.com/watch?v=j2T4gvQAiaE" target="_blank">Not David's video</a> on anime character networks. Characters are connected if they appear in the same episode. The <strong>friendship score</strong> between two characters is:</p>
+            <div class="formula">F<sub>ij</sub> = N<sub>ij</sub> / max(N<sub>i</sub>, N<sub>j</sub>)</div>
+            <p>where N<sub>ij</sub> is episodes they share, and N<sub>i</sub>, N<sub>j</sub> are their total episode counts. Data scraped from the <a href="https://onepiece.fandom.com" target="_blank">One Piece Wiki</a> using the MediaWiki API.</p>
+        </div>
+    </section>
+
+    <!-- Network Graph Section -->
+    <section id="network" class="section">
+        <div class="controls-bar">
+            <div class="control-group">
+                <label>Edge Threshold:</label>
+                <select id="threshold-select">
+                    <option value="0.3">0.3 (sparse)</option>
+                    <option value="0.2" selected>0.2 (default)</option>
+                    <option value="0.15">0.15 (medium)</option>
+                    <option value="0.1">0.1 (dense)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Min Episodes:</label>
+                <input type="range" id="min-episodes-slider" min="3" max="100" value="10" step="1">
+                <span id="min-episodes-val">10</span>
+            </div>
+            <div class="control-group">
+                <label>Color by:</label>
+                <select id="color-by">
+                    <option value="community">Community</option>
+                    <option value="faction">Faction</option>
+                    <option value="episodes">Episode Count</option>
+                    <option value="betweenness">Betweenness</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Size by:</label>
+                <select id="size-by">
+                    <option value="episodes">Episode Count</option>
+                    <option value="degree">Degree</option>
+                    <option value="betweenness">Betweenness</option>
+                    <option value="eigenvector">Eigenvector</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Layout:</label>
+                <select id="layout-select">
+                    <option value="cose">Force-Directed</option>
+                    <option value="concentric">Concentric</option>
+                    <option value="circle">Circle</option>
+                </select>
+            </div>
+            <button id="reset-graph-btn" class="btn">Reset View</button>
+        </div>
+        <div class="graph-container">
+            <div id="cy"></div>
+            <div id="node-info-panel" class="info-panel hidden">
+                <button id="close-panel" class="close-btn">&times;</button>
+                <h3 id="panel-name"></h3>
+                <div id="panel-content"></div>
+            </div>
+        </div>
+        <div id="graph-status" class="status-bar">Ready</div>
+    </section>
+
+    <!-- Character Raster Section -->
+    <section id="raster" class="section">
+        <div class="controls-bar">
+            <div class="control-group">
+                <label>Search:</label>
+                <input type="text" id="raster-search" placeholder="Search characters...">
+            </div>
+            <div class="control-group">
+                <label>Show top:</label>
+                <select id="raster-count">
+                    <option value="20">20 characters</option>
+                    <option value="50" selected>50 characters</option>
+                    <option value="100">100 characters</option>
+                    <option value="200">200 characters</option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <canvas id="raster-canvas"></canvas>
+        </div>
+        <div id="raster-tooltip" class="tooltip hidden"></div>
+    </section>
+
+    <!-- Communities Section -->
+    <section id="communities" class="section">
+        <div class="card">
+            <h3>Community Detection (Louvain Algorithm)</h3>
+            <p>The network was partitioned into communities using the Louvain method, which maximizes modularity. Each community roughly corresponds to a story arc or faction grouping.</p>
+        </div>
+        <div id="communities-grid" class="communities-grid"></div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section id="rankings" class="section">
+        <div class="controls-bar">
+            <div class="control-group">
+                <label>Rank by:</label>
+                <select id="ranking-metric">
+                    <option value="by_episodes">Episode Count</option>
+                    <option value="by_degree">Degree (Connections)</option>
+                    <option value="by_betweenness">Betweenness Centrality</option>
+                    <option value="by_eigenvector">Eigenvector Centrality</option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div id="rankings-table" class="table-container"></div>
+        </div>
+        <div class="two-col">
+            <div class="card">
+                <h3>Top 20 Comparison</h3>
+                <canvas id="rankings-bar-chart"></canvas>
+            </div>
+            <div class="card">
+                <h3>Metric Explanation</h3>
+                <div id="metric-explanation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Explorer Section -->
+    <section id="explorer" class="section">
+        <div class="controls-bar">
+            <div class="control-group" style="flex:1">
+                <label>Character:</label>
+                <input type="text" id="explorer-search" placeholder="Type a character name..." list="char-list" style="width:300px">
+                <datalist id="char-list"></datalist>
+            </div>
+        </div>
+        <div id="explorer-content" class="hidden">
+            <div class="stats-grid" id="explorer-stats"></div>
+            <div class="two-col">
+                <div class="card">
+                    <h3>Episode Appearances</h3>
+                    <canvas id="explorer-timeline"></canvas>
+                </div>
+                <div class="card">
+                    <h3>Strongest Connections</h3>
+                    <div id="explorer-connections" class="table-container"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Ego Network</h3>
+                <div id="ego-cy" style="height:500px;border-radius:8px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Data scraped from <a href="https://onepiece.fandom.com" target="_blank">One Piece Wiki</a> &middot;
+           Inspired by <a href="https://www.youtube.com/@not_David" target="_blank">Not David</a> &middot;
+           Network: F<sub>ij</sub> = N<sub>ij</sub> / max(N<sub>i</sub>, N<sub>j</sub>)</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
