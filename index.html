@@ -205,9 +205,14 @@
                 The <strong>total appearances</strong> of character <em>i</em> are: N<sub>i</sub> = Σ<sub>e</sub> a<sub>i</sub>(e).
             </div>
         </div>
-        <div class="card raster-scroll-container">
-            <div id="raster-wrapper">
-                <canvas id="raster-canvas"></canvas>
+        <div class="card raster-outer">
+            <div class="raster-layout">
+                <div class="raster-labels-col">
+                    <canvas id="raster-labels-canvas"></canvas>
+                </div>
+                <div class="raster-scroll-container" id="raster-scroll">
+                    <canvas id="raster-canvas"></canvas>
+                </div>
             </div>
         </div>
         <div id="raster-tooltip" class="tooltip hidden"></div>

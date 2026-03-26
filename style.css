@@ -341,15 +341,29 @@ tr:hover td { background: var(--bg-card-hover); }
 }
 
 /* Raster Canvas */
+.raster-outer {
+    padding: 12px;
+    overflow: hidden;
+}
+.raster-layout {
+    display: flex;
+    position: relative;
+}
+.raster-labels-col {
+    flex-shrink: 0;
+    z-index: 2;
+    background: var(--bg-card);
+    position: sticky;
+    left: 0;
+}
+#raster-labels-canvas {
+    display: block;
+}
 .raster-scroll-container {
     overflow-x: auto;
     overflow-y: hidden;
-    position: relative;
-    padding: 12px;
-}
-#raster-wrapper {
-    display: inline-block;
-    min-width: 100%;
+    flex: 1;
+    min-width: 0;
 }
 #raster-canvas {
     display: block;
