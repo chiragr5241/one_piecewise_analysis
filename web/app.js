@@ -6,6 +6,8 @@ let RASTER = null;
 let cy = null;
 let egoCy = null;
 let rankingsChart = null;
+let NODE_MAP = null; // id -> node lookup
+let EDGE_INDEX = null; // id -> [{otherId, weight, co_appearances}]
 
 // ---- Data Loading ----
 async function loadData() {
@@ -17,6 +19,20 @@ async function loadData() {
     const resp2 = await fetch('data/raster.json');
     RASTER = await resp2.json();
     status.textContent = 'Initializing...';
+
+    // Build node lookup map
+    NODE_MAP = new Map();
+    DATA.nodes.forEach(n => NODE_MAP.set(n.id, n));
+
+    // Build edge index for fast neighbor lookups (use lowest threshold for most complete index)
+    EDGE_INDEX = new Map();
+    const indexEdges = DATA.edges['0.05'] || DATA.edges['0.1'] || [];
+    indexEdges.forEach(e => {
+        if (!EDGE_INDEX.has(e.source)) EDGE_INDEX.set(e.source, []);
+        if (!EDGE_INDEX.has(e.target)) EDGE_INDEX.set(e.target, []);
+        EDGE_INDEX.get(e.source).push({ otherId: e.target, weight: e.weight, co_appearances: e.co_appearances });
+        EDGE_INDEX.get(e.target).push({ otherId: e.source, weight: e.weight, co_appearances: e.co_appearances });
+    });
 }
 
 // ---- Navigation ----
@@ -174,7 +190,14 @@ function buildGraph(threshold, minEps) {
                 label: n.label,
                 color: getNodeColor(n, colorBy),
                 size: nodeSize,
-                ...n
+                episodes: n.episodes,
+                degree: n.degree,
+                betweenness: n.betweenness,
+                eigenvector: n.eigenvector,
+                clustering: n.clustering,
+                community: n.community,
+                community_color: n.community_color,
+                faction: n.faction,
             }
         });
     });
@@ -264,6 +287,10 @@ function buildGraph(threshold, minEps) {
         wheelSensitivity: 0.3,
         maxZoom: 10,
         minZoom: 0.1,
+        textureOnViewport: true,
+        hideEdgesOnViewport: true,
+        hideLabelsOnViewport: true,
+        pixelRatio: 1,
     });
 
     // Node click handler
@@ -276,7 +303,9 @@ function buildGraph(threshold, minEps) {
     cy.on('tap', function (evt) {
         if (evt.target === cy) {
             document.getElementById('node-info-panel').classList.add('hidden');
+            cy.startBatch();
             cy.elements().removeClass('highlighted dimmed');
+            cy.endBatch();
         }
     });
 
@@ -343,9 +372,11 @@ function rebuildGraph() {
 function recolorGraph() {
     if (!cy) return;
     const colorBy = document.getElementById('color-by').value;
+    cy.startBatch();
     cy.nodes().forEach(node => {
         node.data('color', getNodeColor(node.data(), colorBy));
     });
+    cy.endBatch();
 }
 
 function resizeGraph() {
@@ -355,11 +386,13 @@ function resizeGraph() {
     const values = nodes.map(n => n.data(sizeBy) || n.data('episodes'));
     const maxVal = Math.max(...values);
     const minVal = Math.min(...values);
+    cy.startBatch();
     nodes.forEach(n => {
         const val = n.data(sizeBy) || n.data('episodes');
         const norm = maxVal > minVal ? (val - minVal) / (maxVal - minVal) : 0.5;
         n.data('size', 8 + norm * 40);
     });
+    cy.endBatch();
 }
 
 function relayoutGraph() {
@@ -368,11 +401,13 @@ function relayoutGraph() {
 }
 
 function highlightNeighbors(node) {
+    cy.startBatch();
     cy.elements().removeClass('highlighted dimmed');
     const neighborhood = node.neighborhood().add(node);
     cy.elements().not(neighborhood).addClass('dimmed');
     neighborhood.addClass('highlighted');
     node.addClass('highlighted');
+    cy.endBatch();
 }
 
 function showNodeInfo(data) {
@@ -380,14 +415,12 @@ function showNodeInfo(data) {
     panel.classList.remove('hidden');
     document.getElementById('panel-name').textContent = data.label;
 
-    // Find connections for this character
-    const edges = DATA.edges['0.1'] || DATA.edges['0.2'] || [];
-    const connections = edges
-        .filter(e => e.source === data.id || e.target === data.id)
+    // Find connections for this character using pre-built index
+    const neighbors = EDGE_INDEX.get(data.id) || [];
+    const connections = neighbors
         .map(e => {
-            const otherId = e.source === data.id ? e.target : e.source;
-            const other = DATA.nodes.find(n => n.id === otherId);
-            return { name: other ? other.label : otherId, weight: e.weight };
+            const other = NODE_MAP.get(e.otherId);
+            return { name: other ? other.label : e.otherId, weight: e.weight };
         })
         .sort((a, b) => b.weight - a.weight)
         .slice(0, 15);
@@ -591,7 +624,7 @@ function renderCommunities() {
     const grid = document.getElementById('communities-grid');
     grid.innerHTML = DATA.communities.map(c => {
         // Find the community color from nodes
-        const node = DATA.nodes.find(n => n.community === c.id);
+        const node = DATA.nodes.find(n => n.community === c.id); // small list, ok
         const color = node ? node.community_color : '#444';
         return `<div class="community-card">
             <div class="comm-header">
@@ -704,6 +737,7 @@ function setupExplorer() {
 
     input.addEventListener('change', () => {
         const name = input.value;
+        // NODE_MAP is keyed by id; labels may differ, so search nodes array
         const node = DATA.nodes.find(n => n.label === name);
         if (node) showExplorer(node);
     });
@@ -737,14 +771,12 @@ function showExplorer(node) {
     // Timeline
     drawExplorerTimeline(node);
 
-    // Connections table
-    const allEdges = DATA.edges['0.05'] || DATA.edges['0.1'] || [];
-    const connections = allEdges
-        .filter(e => e.source === node.id || e.target === node.id)
+    // Connections table using pre-built index
+    const neighbors = EDGE_INDEX.get(node.id) || [];
+    const connections = neighbors
         .map(e => {
-            const otherId = e.source === node.id ? e.target : e.source;
-            const other = DATA.nodes.find(n => n.id === otherId);
-            return { name: other ? other.label : otherId, id: otherId, weight: e.weight, coApp: e.co_appearances };
+            const other = NODE_MAP.get(e.otherId);
+            return { name: other ? other.label : e.otherId, id: e.otherId, weight: e.weight, coApp: e.co_appearances };
         })
         .sort((a, b) => b.weight - a.weight)
         .slice(0, 30);
@@ -831,7 +863,7 @@ function buildEgoNetwork(centerNode, connections) {
 
     // Connected nodes
     connections.forEach(c => {
-        const other = DATA.nodes.find(n => n.id === c.id);
+        const other = NODE_MAP.get(c.id);
         if (!other) return;
         elements.push({
             group: 'nodes',
@@ -850,15 +882,22 @@ function buildEgoNetwork(centerNode, connections) {
         });
     });
 
-    // Edges between connected nodes
-    const allEdges = DATA.edges['0.15'] || DATA.edges['0.2'] || [];
-    allEdges.forEach(e => {
-        if (connIds.has(e.source) && connIds.has(e.target) && e.source !== centerNode.id && e.target !== centerNode.id) {
-            elements.push({
-                group: 'edges',
-                data: { source: e.source, target: e.target, weight: e.weight }
-            });
-        }
+    // Edges between connected nodes using index (only scan neighbors of ego nodes)
+    const addedEdges = new Set();
+    connIds.forEach(nodeId => {
+        const nodeNeighbors = EDGE_INDEX.get(nodeId) || [];
+        nodeNeighbors.forEach(e => {
+            if (connIds.has(e.otherId) && e.otherId !== centerNode.id && nodeId !== centerNode.id) {
+                const edgeKey = nodeId < e.otherId ? `${nodeId}|${e.otherId}` : `${e.otherId}|${nodeId}`;
+                if (!addedEdges.has(edgeKey)) {
+                    addedEdges.add(edgeKey);
+                    elements.push({
+                        group: 'edges',
+                        data: { source: nodeId, target: e.otherId, weight: e.weight }
+                    });
+                }
+            }
+        });
     });
 
     egoCy = cytoscape({
