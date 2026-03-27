@@ -33,6 +33,7 @@
         <button class="nav-btn" data-section="communities">Communities</button>
         <button class="nav-btn" data-section="rankings">Rankings</button>
         <button class="nav-btn" data-section="explorer">Character Explorer</button>
+        <button class="nav-btn" data-section="custom-network">Custom Network</button>
     </nav>
 
     <!-- Overview Section -->
@@ -337,6 +338,110 @@
                     A high F with high N<sub>ij</sub> means a genuine narrative bond; a high F with low N<sub>ij</sub> may just reflect
                     two minor characters who happen to only appear together.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Network Section -->
+    <section id="custom-network" class="section">
+        <div class="controls-bar custom-network-controls">
+            <div class="control-group">
+                <label>Min Episodes:</label>
+                <input type="range" id="cn-min-episodes" min="3" max="200" value="20" step="1">
+                <span id="cn-min-episodes-val">20</span>
+            </div>
+            <div class="control-group">
+                <label>Edge Threshold:</label>
+                <input type="range" id="cn-threshold" min="0" max="100" value="10" step="1">
+                <span id="cn-threshold-val">0.10</span>
+            </div>
+            <div class="control-group">
+                <label>Color by:</label>
+                <select id="cn-color-by">
+                    <option value="faction">Faction</option>
+                    <option value="edge_sentiment">Edge Sentiment</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Layout:</label>
+                <select id="cn-layout">
+                    <option value="cose">Force-Directed</option>
+                    <option value="concentric">Concentric</option>
+                    <option value="circle">Circle</option>
+                </select>
+            </div>
+            <button id="cn-rebuild-btn" class="btn">Rebuild Graph</button>
+            <button id="cn-reset-btn" class="btn" style="background:var(--border);color:var(--text)">Reset View</button>
+        </div>
+
+        <div class="card" id="cn-weight-panel">
+            <h3>Edge Layer Weights</h3>
+            <p class="card-desc">Adjust the weight of each relationship layer to customize the composite edge score. The graph recomputes in real-time.</p>
+            <div class="formula">
+                w<sub>ij</sub> = &alpha;&middot;CoApp + &beta;&middot;ArcOverlap + &gamma;&middot;Affiliation + &delta;&middot;Relationship + &epsilon;&middot;Hierarchy + &zeta;&middot;Conflict
+            </div>
+            <div id="cn-layer-sliders" class="layer-sliders-grid"></div>
+            <div id="cn-weight-presets" class="weight-presets">
+                <span class="preset-label">Presets:</span>
+                <button class="preset-btn" data-preset="balanced">Balanced</button>
+                <button class="preset-btn" data-preset="coappearance">Co-appearance Only</button>
+                <button class="preset-btn" data-preset="narrative">Narrative</button>
+                <button class="preset-btn" data-preset="faction">Faction-Heavy</button>
+                <button class="preset-btn" data-preset="conflict">Conflict Focus</button>
+            </div>
+        </div>
+
+        <div class="graph-container" style="height:650px">
+            <div id="cn-cy"></div>
+            <div id="cn-info-panel" class="info-panel hidden">
+                <button id="cn-close-panel" class="close-btn">&times;</button>
+                <h3 id="cn-panel-name"></h3>
+                <div id="cn-panel-content"></div>
+            </div>
+            <div id="cn-edge-legend" class="edge-legend"></div>
+        </div>
+        <div id="cn-status" class="status-bar">Load multiplex data to begin</div>
+
+        <div class="two-col" style="margin-top:16px">
+            <div class="card">
+                <h3>Layer Statistics</h3>
+                <div id="cn-layer-stats"></div>
+            </div>
+            <div class="card">
+                <h3>Top Pairs (Composite Score)</h3>
+                <div id="cn-top-pairs" class="table-container"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Multiplex Network — How It Works</h3>
+            <div class="formula-block">
+                <h4>Layer 1: Co-appearance (Jaccard + NPMI)</h4>
+                <p>Blends two co-presence metrics to measure how much two characters appear together relative to chance:</p>
+                <div class="formula">Jaccard<sub>ij</sub> = |E<sub>i</sub> &cap; E<sub>j</sub>| / |E<sub>i</sub> &cup; E<sub>j</sub>|</div>
+                <div class="formula">NPMI<sub>ij</sub> = log<sub>2</sub>(P(i,j) / P(i)P(j)) / &minus;log<sub>2</sub>(P(i,j))</div>
+                <p>NPMI (Normalized Pointwise Mutual Information) penalizes universal screen hogs better than raw co-appearance count.</p>
+            </div>
+            <div class="formula-block">
+                <h4>Layer 2: Arc Overlap</h4>
+                <p>Jaccard index on story arcs rather than episodes. Two characters sharing multiple key arcs is more meaningful than background co-appearances:</p>
+                <div class="formula">ArcOverlap<sub>ij</sub> = |A<sub>i</sub> &cap; A<sub>j</sub>| / |A<sub>i</sub> &cup; A<sub>j</sub>|</div>
+            </div>
+            <div class="formula-block">
+                <h4>Layer 3: Affiliation</h4>
+                <p>Scores based on shared organizational membership: same crew = 1.0, allied orgs = 0.4, enemy orgs = &minus;0.7. This is a <strong>signed</strong> layer.</p>
+            </div>
+            <div class="formula-block">
+                <h4>Layer 4: Explicit Relationships</h4>
+                <p>Extracted from wiki Relationships sections. Classified into family (+1.0), crew (+0.9), mentor (+0.8), ally (+0.6), rival (&minus;0.2), enemy (&minus;1.0). Also a <strong>signed</strong> layer.</p>
+            </div>
+            <div class="formula-block">
+                <h4>Layer 5: Hierarchy</h4>
+                <p>Organizational rank proximity within the same group: score = 1 / (1 + 0.3&middot;|rank<sub>a</sub> &minus; rank<sub>b</sub>|)</p>
+            </div>
+            <div class="formula-block">
+                <h4>Layer 6: Conflict</h4>
+                <p>Hostility edges derived from negative relationship scores and opposing faction membership. Higher score = stronger enmity.</p>
             </div>
         </div>
     </section>

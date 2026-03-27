@@ -1,0 +1,6400 @@
+{
+  "A O": {
+    "Edward Newgate": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Abi": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tony Tony Chopper": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Aobire": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Absalom": {
+    "Perona": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Blackbeard Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Hogback": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gecko Moria": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marshall D. Teach": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Aggie 68": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ahho Desunen IX": {
+    "Ahho Zurako": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ahho Zurako": {
+    "Ahho Desunen IX": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ain": {
+    "Shuzo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Z": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Aisa": {
+    "Isa": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Raki": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Aladine": {
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Arlong": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Fisher Tiger": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "All-Hunt Grount": {
+    "Shimoi Zappa": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kuzan": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Prodi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Monkey D. Garp": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Alpacacino": {
+    "Shuzo": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Momonga": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Z": {
+      "type": "mentor",
+      "sentiment": 0.7
+    }
+  },
+  "Alvida": {
+    "Crocodile": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Dracule Mihawk": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ant De Bonham": {
+    "All-Hunt Grount": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Apis": {
+    "Bokuden": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Aramaki": {
+    "Sakazuki": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Issho": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Arbell": {
+    "Accino": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lil": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Arlong": {
+    "Chew": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Hatchan": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kuroobi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Fisher Tiger": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ashura Doji": {
+    "Shimotsuki Yasuie": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kin'emon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Sukiyaki": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Aunt": {
+    "Bell-m\u00e8re": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nami": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nojiko": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Roronoa Zoro": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Avalo Pizarro": {
+    "Marshall D. Teach": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Baburu": {
+    "Caribou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gaburu": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Baby 5": {
+    "Uholisia": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Sai": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Chinjao": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Banban": {
+    "Zeff": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Banshee": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Barry": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Bartholomew Kuma": {
+    "Nika": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Clapp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Alpha": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pacifista": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jewelry Bonney": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gyogyo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Bulldog": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Bartolomeo": {
+    "Maynard": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gambia": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Basil Hawkins": {
+    "Borsalino": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Bell-m\u00e8re": {
+    "Genzo": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Bellamy": {
+    "Bellamy Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sarquiss": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Benn Beckman": {
+    "Shanks": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Bentham": {
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Babe": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Galdino": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nefertari Cobra": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Drophy": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Billy (Bandit)": {
+    "Johnny": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Yosaku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Dick": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Black Maria": {
+    "Kurozumi Orochi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Ulti": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Who's-Who": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Bluegrass": {
+    "Tsuru": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Boa Hancock": {
+    "Boa Sandersonia": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boa Marigold": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gloriosa": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Salome": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Boa Marigold": {
+    "Boa Sandersonia": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boa Hancock": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Boa Sandersonia": {
+    "Boa Hancock": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boa Marigold": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gloriosa": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Bomba (Marine)": {
+    "Smoker": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Donquixote Doflamingo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tashigi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pike": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Borsalino": {
+    "Giant Squad": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Little Oars Jr.": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Marco": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sentomaru": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Vegapunk": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sakazuki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Rob Lucci": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    }
+  },
+  "Brogy": {
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Dorry": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Buckingham Stussy": {
+    "Edward Weevil": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Aramaki": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Buggy": {
+    "Crocodile": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Mohji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Cabaji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Alvida": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Dracule Mihawk": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Galdino": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Cabaji": {
+    "Crocodile": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Mohji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Alvida": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Dracule Mihawk": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Caesar Clown": {
+    "Monet": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Vergo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kaidou": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Linlin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Issho": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Baby 5": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Buffalo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Smiley": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Camie": {
+    "Shakuyaku": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Hatchan": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Pappag": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Rosy Life Riders": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Duval": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Camus": {
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Capone Bege": {
+    "Charlotte Chiffon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Pez": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Capone Pez": {
+    "Caesar Clown": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Bege": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Chiffon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pound": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Caramel": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Caribou": {
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "X Drake": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Surume": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Coribou": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Carmel": {
+    "John Giant": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Carrot": {
+    "Inuarashi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Pedro": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Wanda": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nekomamushi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gol D. Roger": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jack": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Cavendish": {
+    "Farul": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Suleiman": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Chabo": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Arlong": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Amande": {
+    "Charlotte Linlin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Mond\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Effil\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Anana": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Wafers": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Br\u00fbl\u00e9e": {
+    "Nami": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Cracker": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Blackbeard Pirates": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Pez": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Oven": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Amande": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Chiffon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pekoms": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Chiffon": {
+    "Charlotte Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Bege": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Cracker": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pound": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nami": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Loki": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gotti": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Caesar Clown": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Pez": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pekoms": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Oven": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Charlotte Cinnamon": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jinbe": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Citron": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jinbe": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Cracker": {
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Daifuku": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Flampe": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Katakuri": {
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Carmel": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Bege": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Joscarpone": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pedro": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Daifuku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Mascarpone": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Galette": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Flampe": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Oven": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Mont-d'Or": {
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Galette": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Cracker": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Luffy": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nami": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Opera": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Moscato": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Opera": {
+    "Charlotte Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nami": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Mont-d'Or": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Moscato": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Oven": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Ichiji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "WCI 31": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Chiffon": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Capone Bege": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Cracker": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pound": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Perospero": {
+    "Capone Bege": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Br\u00fbl\u00e9e": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Carrot": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Praline": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Aladine": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Pudding": {
+    "Vinsmoke Reiju": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nico Robin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Daifuku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Chiffon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "WCI 31": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Oven": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Charlotte Smoothie": {
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Cinnamon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Citron": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlotte Pudding": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlotte Perospero": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Charlotte Snack": {
+    "Charlotte Cracker": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Charlotte Linlin": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Chicken": {
+    "Gyoru": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Chinjao": {
+    "Cavendish": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sai": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Baby 5": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Chip and Dip": {
+    "Scorpion": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Chokyumei-no Chosuke": {
+    "Jugemu Jugemuko": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Cidre": {
+    "Douglas Bullet": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Clou D. Clover": {
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Olvia": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Archaeologist#Demons of Ohara": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Dragon": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Vegapunk": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Colon": {
+    "Scopper Gaban": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Cornelia": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Corto": {
+    "Largo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Cosette": {
+    "Vinsmoke Yonji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Niji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Crocodile": {
+    "Nico Robin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Edward Newgate": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Zala": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Babe": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Galdino": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Bentham": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Drophy": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Curly Dadan": {
+    "Bluejam": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Daddy Masterson": {
+    "Carol": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Dalton": {
+    "Kureha": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tony Tony Chopper": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nefertari Vivi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Daz Bonez": {
+    "Crocodile": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Zala": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Dracule Mihawk": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Demalo Black": {
+    "Albion": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Pacifista": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Denjiro": {
+    "Kurozumi Kanjuro": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kin'emon": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kurozumi Orochi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Oden": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Hiyori": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Momonosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Desire": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bartolomeo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Diamante": {
+    "Donquixote Doflamingo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sugar": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Trebol": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pica": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Senor Pink": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Dellinger": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Bellamy": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Dick": {
+    "Johnny": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Billy (Bandit)": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Yosaku": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Diez Barrels": {
+    "X Drake": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Disco": {
+    "Charlos": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Dogya": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Doha Ittanka II": {
+    "Edward Newgate": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Donquixote Homing": {
+    "Rosward": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlos": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Rosinante": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Donquixote Mjosgard": {
+    "Shirahoshi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Rosward": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Figarland Garling": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Donquixote Homing": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlos": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Donquixote Shivercalero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Leo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Bartholomew Kuma": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Sai": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Donquixote Rosinante": {
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Dorry": {
+    "Brogy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Dracule Mihawk": {
+    "Shanks": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Perona": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Kumashi": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Gecko Moria": {
+      "type": "mentor",
+      "sentiment": 0.7
+    }
+  },
+  "Ducky Bree": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Duval": {
+    "Rosy Life Riders": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Edward Newgate": {
+    "Marco": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marshall D. Teach": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nekomamushi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Thatch": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Toki": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Izou": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Edward Weevil": {
+    "Buckingham Stussy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Edward Newgate": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Elizabello II": {
+    "Dagama": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Riku Doldo III": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Emet": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Joy Boy": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Emporio Ivankov": {
+    "Blackbeard Pirates": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Dragon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Garp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Inazuma": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Bartholomew Kuma": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Ginny": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Enel": {
+    "Hotori and Kotori": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Yama": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Erik": {
+    "Kebi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Farafra": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Okame": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Eustass Kid": {
+    "Heat": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Wire": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Killer": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Basil Hawkins": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kurozumi Orochi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Fabre": {
+    "Boss": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Figarland Shamrock": {
+    "Shanks": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Finamore": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Fisher Tiger": {
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Aladine": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Arlong": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Foxy": {
+    "Hamburg": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Porche": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Francois": {
+    "Emporio Ivankov": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Fukaboshi": {
+    "Neptune": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Otohime": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shirahoshi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Fukurokuju": {
+    "Raizo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Fullbody": {
+    "Gin": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Patty": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Galdino": {
+    "Crocodile": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Marianne": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Gem": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Bentham": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Gambia": {
+    "Maynard": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bartolomeo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gan Fall": {
+    "Gol D. Roger": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Hotori and Kotori": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Shura": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Roronoa Zoro": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ganryu": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Gatz": {
+    "Donquixote Doflamingo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Gecko Moria": {
+    "Perona": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Victoria Cindry": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Catarina Devon": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Absalom": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shiryu": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Hogback": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Oars": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Buhichuck": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Gyoro, Nin, and Bao": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Gedatsu": {
+    "Ohm": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shura": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Satori": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Gerd": {
+    "Hajrudin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Road": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gimlet": {
+    "Senor Pink": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gin": {
+    "Pearl": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Krieg": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ginny": {
+    "Bartholomew Kuma": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Giolla": {
+    "Lao G": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Baby 5": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Trafalgar D. Water Law": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Trebol": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Donquixote Doflamingo": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Dellinger": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Gion": {
+    "Tsuru": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gladius": {
+    "Kin'emon": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Donquixote Doflamingo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Baby 5": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Viola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Rosinante": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Gloriosa": {
+    "Boa Marigold": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boa Hancock": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boa Sandersonia": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gol D. Roger": {
+    "Shanks": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Scopper Gaban": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Silvers Rayleigh": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kin'emon": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kouzuki Oden": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Edward Newgate": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Garp": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buggy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sengoku": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Goldberg": {
+    "Road": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Gerd": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Gomorrah": {
+    "Franky Family": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gorishiro": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Mizerka": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Gotti": {
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Capone Bege": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Vito": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Chiffon": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Linlin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Gram": {
+    "Nico Olvia": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Gyoru": {
+    "Chicken": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Hack": {
+    "Jinbe": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Hajrudin": {
+    "Loki": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Hamburg": {
+    "Foxy": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Hannyabal": {
+    "Magellan": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Haredas": {
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Hatchan": {
+    "Gyaro": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Macro": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tansui": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kuroobi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Arlong": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Koala": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Fisher Tiger": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Pappag": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Camie": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Silvers Rayleigh": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shakuyaku": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Brook": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Usopp": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Rosy Life Riders": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Franky": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Roronoa Zoro": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Helmeppo": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Morgan": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Heracles": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Usopp": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Hibari": {
+    "Blackbeard Pirates": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Boa Hancock": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Helmeppo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Koby": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Prince Grus": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Hina": {
+    "Smoker": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Jango": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Fullbody": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Hippo Gentleman": {
+    "Gecko Moria": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Hiriluk": {
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Hogback": {
+    "Victoria Cindry": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Absalom": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Gecko Moria": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Margarita": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Holed'em": {
+    "Kamijiro": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Holy": {
+    "Ohm": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Honner": {
+    "Mont Blanc Noland": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Kalgara": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Hublot": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Hyougoro": {
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shimotsuki Yasuie": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shinobu": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Iceburg": {
+    "Tyrannosaurus": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Igaram": {
+    "Nefertari Vivi": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Imu": {
+    "Figarland Garling": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jaygarcia Saturn": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sabo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Marcus Mars": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Joy Boy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Brook": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Loki": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Inazuma": {
+    "Emporio Ivankov": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Indigo": {
+    "Scarlet": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Shiki": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Inuarashi": {
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kawamatsu": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Raizo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Momonosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Inuppe": {
+    "Perona": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gecko Moria": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Hogback": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Usopp": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Ipponmatsu": {
+    "Ipponume": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ipponume": {
+    "Ipponmatsu": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Isa": {
+    "Raki": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Issho": {
+    "Bastille": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Maynard": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Crocodile": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Kaidou": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Sakazuki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Charlotte Linlin": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Donquixote Doflamingo": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Sengoku": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Smoker": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Tashigi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Aramaki": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Izou": {
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kikunojo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Jabra": {
+    "Fukurou": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Kaku": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Kumadori": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Sanji": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Rob Lucci": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Roronoa Zoro": {
+      "type": "rival",
+      "sentiment": -0.1
+    }
+  },
+  "Jack": {
+    "Ginrummy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Queen": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "King": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Jaguar D. Saul": {
+    "Black Maria": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nico Olvia": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Vegapunk/Shaka": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nico Robin": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tony Tony Chopper": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Clou D. Clover": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Jango": {
+    "Kuro": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Jarul": {
+    "Jorul": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Jaygarcia Saturn": {
+    "Sabo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Imu": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nefertari Cobra": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Joy Boy": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Jesus Burgess": {
+    "Laffitte": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Marshall D. Teach": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Kuzan": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Jewelry Bonney": {
+    "Alpha": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pacifista": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vegapunk": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bartholomew Kuma": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Ginny": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Conney": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Jigoro": {
+    "Inuppe": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Nico Robin": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Tony Tony Chopper": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Sanji": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Roronoa Zoro": {
+      "type": "rival",
+      "sentiment": -0.1
+    }
+  },
+  "John": {
+    "Rocks D. Xebec": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Johnny": {
+    "Yosaku": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Dracule Mihawk": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Jonathan": {
+    "Jessica": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sakazuki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    }
+  },
+  "Judy": {
+    "Marie": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Charlos": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Jugemu Jugemuko": {
+    "Chokyumei-no Chosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kaidou": {
+    "Scotch": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Ashura Doji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "X Drake": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Joy Boy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "King": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Hiyori": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Queen": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jack": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sasaki": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Black Maria": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Yamato": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Who's-Who": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Ulti": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Page One": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kakunoshin": {
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kalgara": {
+    "Seto": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Mousse": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shandia": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Mont Blanc Noland": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Herb": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kamijiro": {
+    "Holed'em": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Karoo": {
+    "Nefertari Vivi": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kashii": {
+    "Oimo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sogeking": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Katsuzo": {
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kawamatsu": {
+    "Renona Topakka": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kaya": {
+    "Kuro": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kikunojo": {
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Izou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Killer": {
+    "Eustass Kid": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Smiley": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kurozumi Orochi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Kimel": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Kin'emon": {
+    "Holed'em": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Tsurujo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "King": {
+    "Kaidou": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Oden": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlotte Linlin": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kurozumi Orochi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Joy Boy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Queen": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jack": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sasaki": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Ulti": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Page One": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Who's-Who": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kingbaum": {
+    "Nami": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Pound": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Linlin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Cracker": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Koala": {
+    "Muti": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kobato": {
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Koby": {
+    "Monkey D. Garp": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Helmeppo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sakazuki": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "X Drake": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kodama": {
+    "Odama": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Komachiyo": {
+    "Ulti": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kurozumi Tama": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Hihimaru": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kong": {
+    "Gol D. Roger": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Garp": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kotatsu": {
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kouzuki Hiyori": {
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Sukiyaki": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Roronoa Zoro": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Momonosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kouzuki Momonosuke": {
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nekomamushi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Hiyori": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kouzuki Oden": {
+    "Kouzuki Sukiyaki": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Toki": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kouzuki Sukiyaki": {
+    "Shimotsuki Yasuie": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Tama": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kurozumi Orochi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Toko": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kouzuki Toki": {
+    "Kouzuki Oden": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Momonosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Karma": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kouzuki Hiyori": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Krieg": {
+    "Gin": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Pearl": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Kukai": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Kureha": {
+    "Tony Tony Chopper": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kuro": {
+    "Nugire Yainu": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jango": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Buchi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sham": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Kurozumi Higurashi": {
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kurozumi Kanjuro": {
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kurozumi Orochi": {
+    "Kurozumi Tama": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Semimaru": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Higurashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Kanjuro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kurozumi Semimaru": {
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Higurashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kurozumi Tama": {
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Kuzan": {
+    "Hibari": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jinbe": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Monkey D. Garp": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jaguar D. Saul": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sakazuki": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Smoker": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Donquixote Doflamingo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sengoku": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Kyros": {
+    "Rebecca": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Scarlett": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Riku Doldo III": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Viola": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Lady Tree": {
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kingbaum": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Laffitte": {
+    "Avalo Pizarro": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Marshall D. Teach": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Lao G": {
+    "Donquixote Doflamingo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Trebol": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Baby 5": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Largo": {
+    "Corto": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Leo": {
+    "Grabar": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Leonero": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Lil": {
+    "Hockera": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Nami": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Franky": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Accino": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Arbell": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Salchow": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Lily Enstomach": {
+    "Panz Fry": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Little Oars Jr.": {
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Loki": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Scopper Gaban": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Hajrudin": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Lola (Zombie)": {
+    "Oars": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Inuppe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gecko Moria": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Absalom": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Magellan": {
+    "Sengoku": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Makino": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shanks": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Curly Dadan": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Portgas D. Ace": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Monkey D. Garp": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nefertari Cobra": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sabo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Marco": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Vista": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Silvers Rayleigh": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Izou": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sakazuki": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marshall D. Teach": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Edward Newgate": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Dracule Mihawk": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Squard": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gol D. Roger": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Marianne": {
+    "Gem": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Mikita": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Marshall D. Teach": {
+    "Jaygarcia Saturn": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Catarina Devon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Rocks D. Xebec": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Masked Deuce": {
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Mato": {
+    "Loki": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Maynard": {
+    "Bastille": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Megalo": {
+    "Shirahoshi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Merry": {
+    "Kaya": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Mihar": {
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Miss Catherina": {
+    "Mr. Beans": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Mohji": {
+    "Richie": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Crocodile": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Buggy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Dracule Mihawk": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Cabaji": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Alvida": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Monet": {
+    "Sugar": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Monkey D. Dragon": {
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Garp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bartholomew Kuma": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Monkey D. Garp#Early One Piece": {
+    "Gol D. Roger": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kong": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Bogard": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Helmeppo": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Koby": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Boa Hancock": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bartholomew Kuma": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sengoku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Tsuru": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Sakazuki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    }
+  },
+  "Mont Blanc Noland": {
+    "Mousse": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Morgan": {
+    "Helmeppo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Rika": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Mountain God": {
+    "Koyama": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Mr. 9": {
+    "Nefertari Vivi": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Mr. Beans": {
+    "Miss Catherina": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Nakaiwa": {
+    "Koyama": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tsurujo": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Nako": {
+    "Genzo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Nefertari Vivi": {
+    "Morgans": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Dragon": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Rebecca": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shirahoshi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Garp": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Rob Lucci": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Roronoa Zoro": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Zala": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Usopp": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Sanji": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Tony Tony Chopper": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Nico Robin": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Negikuma Maria": {
+    "Dalton": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Nekomamushi": {
+    "Inuarashi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shishilian": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pedro": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Perospero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bariete": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pekoms": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kawamatsu": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Raizo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Momonosuke": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bepo": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jack": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Brook": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Crocus": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tom": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Wanda": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Rumbar Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Franky": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Carrot": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Neptune": {
+    "Hoe": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vander Decken IX": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Otohime": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Nico Olvia": {
+    "Nico Robin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Roji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Oran": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Noko": {
+    "Drim": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Nola": {
+    "Seto": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kalgara": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Mont Blanc Noland": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Norinosuke": {
+    "Holed'em": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Nukky": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Tony Tony Chopper": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Usopp": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Oars": {
+    "Gecko Moria": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kaidou": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Odama": {
+    "Kodama": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ossamondo": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Page One": {
+    "Ulti": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Yamato": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Pandaman": {
+    "Pandawomanmi": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Pandawomanmi": {
+    "Pandaman": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Panz Fry": {
+    "Lily Enstomach": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Patty": {
+    "Carne": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Zeff": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Pearl": {
+    "Gin": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Krieg": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Pedro": {
+    "Inuarashi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shishilian": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Charlotte Perospero": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nekomamushi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Pekoms": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Zepo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Katakuri": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Gol D. Roger": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Carrot": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Wanda": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Pekoms": {
+    "Charlotte Linlin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tamago": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Capone Bege": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Perona": {
+    "Kumashi": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gecko Moria": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Bartholomew Kuma": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Pica": {
+    "Donquixote Doflamingo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Diamante": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Vergo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Trebol": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Baby 5": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Sai": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Buffalo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Portgas D. Ace": {
+    "Shanks": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marco": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Thatch": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marshall D. Teach": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Edward Newgate": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Masked Deuce": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Mihar": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kotatsu": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Skull": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Portgas D. Rouge": {
+    "Gol D. Roger": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Pound": {
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Pez": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Capone Bege": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Cracker": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Prince Grus": {
+    "X Drake": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Koby": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Avalo Pizarro": {
+      "type": "rival",
+      "sentiment": -0.1
+    },
+    "Monkey D. Garp": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Prodi": {
+    "All-Hunt Grount": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Monkey D. Garp": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Kuzan": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Pudding Pudding": {
+    "Chew": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Puzzle": {
+    "Vigaro": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Queen": {
+    "Kurozumi Tama": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jack": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "King": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Scratchmen Apoo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Raizo": {
+    "Shimotsuki Yasuie": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Kouzuki Oden": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Kouzuki Toki": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Kouzuki Momonosuke": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kin'emon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kanjuro": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Inuarashi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nekomamushi": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Aramaki": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Caribou": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Raki": {
+    "Kamakiri": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Aisa": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Rasa": {
+    "Nefertari Cobra": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nefertari Vivi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Rebecca": {
+    "Sugar": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Diamante": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kyros": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Scarlett": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Viola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Riku Doldo III": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pica": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Riku Doldo III": {
+    "Rebecca": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Viola": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Tank Lepanto": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Scarlett": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kyros": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Rob Lucci": {
+    "Jabra": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nero": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Spandam": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Marcus Mars": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Roronoa Zoro": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Spandine": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Vegapunk": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jaygarcia Saturn": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Onigumo": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Borsalino": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Rocks D. Xebec": {
+    "Shakuyaku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Marshall D. Teach": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Buckingham Stussy": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Rosward Shalria": {
+    "Borsalino": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Russian": {
+    "Senor Pink": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ryudo": {
+    "Yoko": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Ryunosuke": {
+    "Trafalgar D. Water Law": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Roronoa Zoro": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Saber": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Sabo": {
+    "Outlook III": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Didit": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sterry": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Jesus Burgess": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nefertari Cobra": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Issho": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Porchemy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Sai": {
+    "Chinjao": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Boo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lao G": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Baby 5": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Sakazuki": {
+    "Kuzan": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Onigumo": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Koby": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Doberman": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Rob Lucci": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Borsalino": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Monkey D. Garp": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Kouzuki Oden": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sengoku": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Issho": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Aramaki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Ryokugyu": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    }
+  },
+  "Salchow": {
+    "Lil": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Campacino": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Sanjuan Wolf": {
+    "Blackbeard Pirates": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Avalo Pizarro": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Marshall D. Teach": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Vasco Shot": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Sasaki": {
+    "Ulti": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "X Drake": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Page One": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Who's-Who": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Satori": {
+    "Hotori and Kotori": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Ohm": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shura": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gedatsu": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Scopper Gaban": {
+    "Shanks": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Crocus": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Silvers Rayleigh": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Gol D. Roger": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Edward Newgate": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Scratchmen Apoo": {
+    "Kaidou": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Eustass Kid": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Sengoku": {
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Dragon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Garp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Gol D. Roger": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Tsuru": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Kuzan": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sakazuki": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Issho": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Donquixote Doflamingo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Oden": {
+      "type": "sworn_bond",
+      "sentiment": 1.0
+    },
+    "Donquixote Rosinante": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Trafalgar D. Water Law": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "X Drake": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Senor Pink": {
+    "Diamante": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Trebol": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Donquixote Doflamingo": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Sentomaru": {
+    "Borsalino": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Seto": {
+    "Mousse": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Kalgara": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Shakuyaku": {
+    "Silvers Rayleigh": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Shanks": {
+    "Benn Beckman": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Higuma": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Lucky Roux": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Yasopp": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Rockstar": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Sheepshead": {
+    "Jack": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Shiki": {
+    "Scarlet": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Indigo": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Shimoi Zappa": {
+    "All-Hunt Grount": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kuzan": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Ant De Bonham": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Shimotsuki Kouzaburou": {
+    "Shimotsuki Kuina": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shimotsuki Koushirou": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Shimotsuki Ushimaru": {
+    "Yamato": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Shimotsuki Yasuie": {
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Toko": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Shin Jaiya": {
+    "Shin Detamaruka": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Shine": {
+    "Hina": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Shinobu": {
+    "Kin'emon": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Fukurokuju": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kouzuki Momonosuke": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Yamato": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Trafalgar D. Water Law": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Shirahoshi": {
+    "Fukaboshi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Neptune": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Ryuboshi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Otohime": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Manboshi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Megalo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Shiryu": {
+    "Blackbeard Pirates": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Sanjuan Wolf": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Marshall D. Teach": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Sho": {
+    "Aunt": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Shura": {
+    "Gedatsu": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Satori": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Ohm": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Shuzo": {
+    "Alpacacino": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Silvers Rayleigh\u200e": {
+    "Gol D. Roger": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Shanks": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Lord of the Coast": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Buggy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Crocus": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kouzuki Oden": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Skull": {
+    "Portgas D. Ace": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Smoker": {
+    "Crocodile": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Caesar Clown": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Tashigi": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Hina": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sengoku": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Donquixote Doflamingo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kuzan": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Issho": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Sodom": {
+    "Franky Family": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Spandam": {
+    "Kaku": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kumadori": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kalifa": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Rob Lucci": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Spandine": {
+    "Rob Lucci": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Spandam": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Squard": {
+    "Gol D. Roger": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Stansen (Non-Canon)": {
+    "Puzzle": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Guyle": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Sterry": {
+    "Sabo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Nefertari Cobra": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Streusen": {
+    "Charlotte Linlin": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Capone Bege": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Stussy": {
+    "Vegapunk": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Su": {
+    "Usopp": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Conis": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Sanji": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Sugar": {
+    "Monet": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Sukoshiba Kanishitoru": {
+    "Hannyabal": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "T Bone": {
+    "Sakazuki": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Issho": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Tamago": {
+    "Pedro": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Linlin": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Capone Bege": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Pekoms": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Brook": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Charlotte Smoothie": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Tank Lepanto": {
+    "Viola": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Riku Doldo III": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Dagama": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Tashigi": {
+    "Vergo": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Smoker": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Caesar Clown": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vegapunk": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Terracotta": {
+    "Igaram": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Terry Gilteo": {
+    "Monkey D. Dragon": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Thatch": {
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Tightrope Walking Funan Bros": {
+    "Nami": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Buggy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Roronoa Zoro": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Tokikake": {
+    "Issho": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Toko": {
+    "Usopp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shimotsuki Yasuie": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kurozumi Orochi": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Tom": {
+    "Gol D. Roger": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Iceburg": {
+      "type": "mentor",
+      "sentiment": 0.7
+    },
+    "Franky": {
+      "type": "mentor",
+      "sentiment": 0.7
+    }
+  },
+  "Toto": {
+    "Aswa": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Trafalgar Lami": {
+    "Trafalgar D. Water Law": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Donquixote Rosinante": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Trebol": {
+    "Donquixote Doflamingo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Baby 5": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Diamante": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Caesar Clown": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sugar": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lao G": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Pica": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Senor Pink": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Tsuru": {
+    "Gion": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sengoku": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Kujaku": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Garp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Bluegrass": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Tsurujo": {
+    "Kin'emon": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Ulti": {
+    "Queen": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Page One": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Yamato": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Urashima": {
+    "Mouseman": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Usakkov": {
+    "Bentham": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Usopp/Personality and Relationships#Sogeking": {
+    "Yasopp": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kuro": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kuzan": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Franky Family": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Tony Tony Chopper": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kaya": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Roronoa Zoro": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Shanks": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sugar": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Caesar Clown": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Cavendish": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Heracles": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Rob Lucci": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Drophy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Pica": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Komachiyo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Hody Jones": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Inuarashi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kurozumi Tama": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Shiki": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Absalom": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Wanda": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Ulti": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Page One": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Bunbuku": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jabra": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Sanji": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Enel": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Charlotte Pudding": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Nefertari Vivi": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "Iceburg": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Spandam": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Blueno": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Franky": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Brook": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Laboon": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Zeo": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jinbe": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kaku": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Uta": {
+    "Shanks": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Tot Musica": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Van Augur": {
+    "Blackbeard Pirates": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Portgas D. Ace": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Caribou": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Marshall D. Teach": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    }
+  },
+  "Vander Decken IX": {
+    "Wadatsumi": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Vegapunk": {
+    "Vegapunk/York": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vegapunk/Atlas": {
+    "Vegapunk/York": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Vegapunk/Edison": {
+    "Vegapunk/York": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vegapunk/Lilith": {
+    "Vegapunk/York": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shaka": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Edison": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pythagoras": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "York": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Vegapunk/Shaka": {
+    "Vegapunk/York": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Lilith": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Pythagoras": {
+      "type": "unknown",
+      "sentiment": 0.0
+    },
+    "York": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Vergo": {
+    "Smoker": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Victoria Cindry": {
+    "Hogback": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Margarita": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Vigaro": {
+    "Puzzle": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Guyle": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Vinsmoke Ichiji": {
+    "Vinsmoke Judge": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Reiju": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Vinsmoke Niji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Zeff": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Yonji": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vinsmoke Judge": {
+    "Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Zeff": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Pudding": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Reiju": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Ichiji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Niji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Yonji": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vinsmoke Niji": {
+    "Vinsmoke Judge": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Charlotte Linlin": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Reiju": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Ichiji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Zeff": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Yonji": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vinsmoke Reiju": {
+    "Vinsmoke Judge": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Ichiji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Niji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Yonji": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vinsmoke Yonji": {
+    "Vinsmoke Judge": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Sora": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Reiju": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Ichiji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Vinsmoke Niji": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Cosette": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Sanji": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Viola": {
+    "Riku Doldo III": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Scarlett": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Tank Lepanto": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Rebecca": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kyros": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Vista": {
+    "Edward Newgate": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Portgas D. Ace": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Sakazuki": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Vito": {
+    "Capone Bege": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Gotti": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Wadatsumi": {
+    "Vander Decken IX": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Zeo": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Jinbe": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Wallace": {
+    "Portgas D. Ace": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Wanda": {
+    "Jack": {
+      "type": "subordinate",
+      "sentiment": 0.3
+    },
+    "Inuarashi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Carrot": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Brook": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Capone Bege": {
+      "type": "crew",
+      "sentiment": 0.9
+    }
+  },
+  "Wapol": {
+    "Kinderella": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Who's-Who": {
+    "Sasaki": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Ulti": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Kaidou": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "X Drake": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Queen": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Page One": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Yamato": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "Woop Slap": {
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Higuma": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Wyper": {
+    "Shandia": {
+      "type": "enemy",
+      "sentiment": -0.8
+    }
+  },
+  "X Drake": {
+    "Diez Barrels": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Yamato": {
+    "Portgas D. Ace": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Ulti": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Monkey D. Luffy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Brook": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Jinbe": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nami": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Nico Robin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Kouzuki Momonosuke": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sanji": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Usopp": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Franky": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Sasaki": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Shinobu": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Joy Boy": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Uzuki Tempura": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Fugetsu Omusubi": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shimotsuki Ushimaru": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "X Drake": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Fuga": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Yamon": {
+    "Shakuyaku": {
+      "type": "unknown",
+      "sentiment": 0.0
+    }
+  },
+  "Yasopp": {
+    "Usopp": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Shanks": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Banchina": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Yoko": {
+    "Ryudo": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Yorki": {
+    "Brook": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Laboon": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Yosaku": {
+    "Johnny": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  },
+  "Zala": {
+    "Bentham": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Crocodile": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Babe": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Drophy": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Galdino": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Zambai": {
+    "Franky": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Zeus": {
+    "Brook": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Charlotte Linlin": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Monkey D. Luffy": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Charlotte Cracker": {
+      "type": "crew",
+      "sentiment": 0.9
+    },
+    "Ulti": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Road": {
+      "type": "ally",
+      "sentiment": 0.6
+    },
+    "Nami": {
+      "type": "ally",
+      "sentiment": 0.6
+    }
+  },
+  "Zunesha": {
+    "Miyagi": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Jack": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Kouzuki Momonosuke": {
+      "type": "enemy",
+      "sentiment": -0.8
+    },
+    "Joy Boy": {
+      "type": "family",
+      "sentiment": 0.8
+    },
+    "Monkey D. Luffy": {
+      "type": "family",
+      "sentiment": 0.8
+    }
+  }
+}

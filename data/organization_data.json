@@ -1,0 +1,2650 @@
+{
+  "Totto Land": {
+    "members": [
+      {
+        "page": "Charlotte Linlin",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Pekoms",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Chiffon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Pudding",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Smoothie",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Cracker",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Dosmarche",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Lola",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Perospero",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Mont-d'Or",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Mascarpone",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Saint-Marc",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Compote",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Capone Bege",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Capone Pez",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Mobile",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Moscato",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Pedro",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Dacquoise",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Kanten",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Marnier",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Citron",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Noisette",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Katakuri",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Zuccotto",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Cornstarch",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Galette",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Broy\u00e9",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Opera",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Amande",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Nusstorte",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Compo",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Daifuku",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Snack",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Flampe",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Chiboust",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Kato",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Tablet",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Praline",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Charlotte Oven",
+        "role": "minister",
+        "rank_level": 6
+      },
+      {
+        "page": "Carrot",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Longarm Tribe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Br\u00fbl\u00e9e",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Caesar Clown",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "King",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Choco Police",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Loki",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Carmel",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Brook",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Streusen",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Urouge",
+        "role": "commander",
+        "rank_level": 8
+      },
+      {
+        "page": "Sanji",
+        "role": "captain",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Ukkari Hot-Spring Island": {
+    "members": [
+      {
+        "page": "Gedatsu",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Underworld": {
+    "members": [
+      {
+        "page": "Donquixote Doflamingo",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Trafalgar D. Water Law",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Carmel",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Stussy",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Morgans",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Lu Feld",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Rob Lucci",
+        "role": "agent",
+        "rank_level": 4
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Vegapunk": {
+    "members": [
+      {
+        "page": "Pacifista",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Borsalino",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "S-Snake",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Stussy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Shaka",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Lilith",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Edison",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Pythagoras",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Atlas",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/York",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jinbe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Bartholomew Kuma",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Caesar Clown",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Vinsmoke Judge",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Queen",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Jewelry Bonney",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jaygarcia Saturn",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sentomaru",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Issho",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Nico Robin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jaguar D. Saul",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Monkey D. Dragon",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Nika",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Franky",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nami",
+        "role": "general",
+        "rank_level": 8
+      },
+      {
+        "page": "Usopp",
+        "role": "general",
+        "rank_level": 8
+      },
+      {
+        "page": "Tony Tony Chopper",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Clou D. Clover",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Rob Lucci",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Kaku",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Sea Beast Weapons",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "King",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kaidou",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kaya",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Emet",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Joy Boy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Buckingham Stussy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Dragon Number Thirteen",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Dragon Number Twenty-One",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Ginny",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "emperor",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Vegapunk/Edison": {
+    "members": [
+      {
+        "page": "Vegapunk",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Vegapunk/Lilith",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/York",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Pythagoras",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "S-Shark",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Stussy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Rob Lucci",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kaku",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Brook",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Borsalino",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nico Robin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jinbe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ethanbaron V. Nusjuro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Haredas",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk/Atlas",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "WCI 31": {
+    "members": [
+      {
+        "page": "Buche",
+        "role": "member",
+        "rank_level": 4
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Wagomuland": {
+    "members": [
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nola",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Amazon",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Aisa",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Walrus School": {
+    "members": [
+      {
+        "page": "Jaguar D. Saul",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nika",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Loki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Colon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jarul",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Wanda": {
+    "members": [
+      {
+        "page": "Inuarashi",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nekomamushi",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jack",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Carrot",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Capone Bege",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Brook",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Pedro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Raizo",
+        "role": "gifter",
+        "rank_level": 4
+      },
+      {
+        "page": "Shishilian",
+        "role": "gifter",
+        "rank_level": 4
+      },
+      {
+        "page": "Caesar Clown",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Donquixote Doflamingo",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Tristan",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Pekoms",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Wany",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nami",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kin'emon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kurozumi Kanjuro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Momonosuke",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Bariete",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ashura Doji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shimotsuki Yasuie",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jinbe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Perospero",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [
+      "Beasts Pirates",
+      "Jack",
+      "Inuarashi",
+      "Koro",
+      "Carrot",
+      "Thousand Sunny"
+    ],
+    "enemies": [
+      "Jack"
+    ]
+  },
+  "Wano Country": {
+    "members": [
+      {
+        "page": "Kaidou",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Kurozumi Orochi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Momonosuke",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hogback",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Oden",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Joy Boy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Shimotsuki Kouzaburou",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Sukiyaki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Basil Hawkins",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kurozumi Higurashi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jack",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Queen",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Toyama Tsujigiro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shimotsuki Ryuma",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Holed'em",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Speed",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Black Maria",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Sarahebi",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Inuarashi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "X Drake",
+        "role": "headliner",
+        "rank_level": 6
+      },
+      {
+        "page": "Denjiro",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Fugetsu Omusubi",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Yatappe",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Raizo",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Uzuki Tempura",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Omasa",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Aramaki",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Kawamatsu",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Shimotsuki Yasuie",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Tsunagoro",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Kikunojo",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Shimotsuki Ushimaru",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Cho",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Mountain God",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kin'emon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ashura Doji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gecko Moria",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kouzuki Toki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kurozumi Kanjuro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Hiyori",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Portgas D. Ace",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Little Oars Jr.",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kurozumi Tama",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gazelleman",
+        "role": "gifter",
+        "rank_level": 4
+      },
+      {
+        "page": "Urashima",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Toko",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "King",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Tony Tony Chopper",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Hyougoro",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Caribou",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Yamato",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nico Robin",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shinobu",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shanks",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Who's-Who",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ulti",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Page One",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Brook",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Wapol": {
+    "members": [
+      {
+        "page": "Blackbeard Pirates",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kinderella",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Imu",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nefertari Cobra",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Morgans",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nefertari Vivi",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shirahoshi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Chess",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kuromarimo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hiriluk",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Dragon",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Dalton",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Isshi-20",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kureha",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Igaram",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Tony Tony Chopper",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Robson",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Chessmarimo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hakowan",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlos",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Donquixote Mjosgard",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Vegapunk/York",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Dobon",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": [
+      "Dalton",
+      "Mary Geoise"
+    ]
+  },
+  "Water 7": {
+    "members": [
+      {
+        "page": "Iceburg",
+        "role": "general",
+        "rank_level": 8
+      },
+      {
+        "page": "Ishigo Shitemanna",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nico Robin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Franky",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Bushon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Stevie",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Blueno",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Mozu and Kiwi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Franky Family",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nami",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kalifa",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Tom",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Spandam",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Whitebeard Pirates": {
+    "members": [
+      {
+        "page": "Shanks",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kaidou",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "captain",
+        "rank_level": 10
+      },
+      {
+        "page": "Buggy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Marshall D. Teach",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Thatch",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Blamenco",
+        "role": "commander",
+        "rank_level": 8
+      },
+      {
+        "page": "Portgas D. Ace",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Blackbeard Pirates",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Edward Weevil",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Buckingham Stussy",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [
+      "Jinbe",
+      "Seven Warlords of the Sea",
+      "Impel Down",
+      "Emporio Ivankov",
+      "Revolutionary Army",
+      "Buggy",
+      "Roger Pirates",
+      "Whitebeard Alliance"
+    ],
+    "enemies": [
+      "Marines",
+      "Blackbeard Pirates"
+    ]
+  },
+  "World Economy News Paper": {
+    "members": [
+      {
+        "page": "Morgans",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nico Robin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Attach",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Iyan'eno Chinode",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Scratchmen Apoo",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Stussy",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Jinbe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ginny",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Garp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Royder",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Usopp",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Tony Tony Chopper",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Franky",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Sanji",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Duval",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vinsmoke Reiju",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Pedro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Blackbeard Pirates",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Dragon",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Marshall D. Teach",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sabo",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Queen Mama Chanter",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Vito",
+        "role": "queen",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Pudding",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Dracule Mihawk",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Perona",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gecko Moria",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Issho",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Aramaki",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Bartholomew Kuma",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Jabari",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Kaidou",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Trafalgar D. Water Law",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Eustass Kid",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Buggy",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Vegapunk",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nefertari Vivi",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Vegapunk/York",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Dorry",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Brogy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jack",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Donquixote Doflamingo",
+        "role": "don",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "World Government": {
+    "members": [
+      {
+        "page": "Dalton",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Wapol",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Dragon",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Imu",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Kong",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Spandam",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sabo",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Rocks D. Xebec",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Emporio Ivankov",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Marcus Mars",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Topman Warcury",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Ethanbaron V. Nusjuro",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Shepherd Ju Peter",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Figarland Garling",
+        "role": "commander-in-chief",
+        "rank_level": 10
+      },
+      {
+        "page": "Jaygarcia Saturn",
+        "role": "commander-in-chief",
+        "rank_level": 10
+      },
+      {
+        "page": "Emet",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fisher Tiger",
+        "role": "officer",
+        "rank_level": 6
+      },
+      {
+        "page": "Issho",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Aramaki",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Portgas D. Ace",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Morley",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Marshall D. Teach",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Blackbeard Pirates",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Oimo",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Kashii",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Franky Family",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Nico Robin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Franky",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Marco",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Donquixote Doflamingo",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Iwatobi",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Chap",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Ban Dedessin\u00e9e",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Moqueca",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Lemoncheese",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Jeep",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Mari",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Sauce",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Neggy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Couran",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nashi",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Mont Blanc Noland",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Smoker",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Tashigi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Crocodile",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Tom",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jango",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fullbody",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Hody Jones",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Jarul",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Carmel",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Loki",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Thalassa Lucas",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Kaidou",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Kurozumi Orochi",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Sengoku",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Monkey D. Garp",
+        "role": "member",
+        "rank_level": 4
+      },
+      {
+        "page": "Edward Newgate",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Pacifista",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Bartholomew Kuma",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Clou D. Clover",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Joy Boy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Nefertari D. Lili",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shanks",
+        "role": "emperor",
+        "rank_level": 10
+      },
+      {
+        "page": "Kuzan",
+        "role": "fleet admiral",
+        "rank_level": 10
+      },
+      {
+        "page": "Sakazuki",
+        "role": "fleet admiral",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "agent",
+        "rank_level": 4
+      },
+      {
+        "page": "Nika",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [
+      "Marines"
+    ],
+    "enemies": []
+  },
+  "Yamato": {
+    "members": [
+      {
+        "page": "Kaidou",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Oden",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Portgas D. Ace",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Momonosuke",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Ulti",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Franky",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Brook",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "captain",
+        "rank_level": 10
+      },
+      {
+        "page": "Nico Robin",
+        "role": "captain",
+        "rank_level": 10
+      },
+      {
+        "page": "Jinbe",
+        "role": "captain",
+        "rank_level": 10
+      },
+      {
+        "page": "Sasaki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shinobu",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Joy Boy",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shimotsuki Ushimaru",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fugetsu Omusubi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Uzuki Tempura",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "X Drake",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fuga",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kurozumi Orochi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Page One",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Black Maria",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hatcha",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shanks",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Linlin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Eustass Kid",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Trafalgar D. Water Law",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Scratchmen Apoo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Inbi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Zanki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kazenbo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Rokki",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Zunesha",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nekomamushi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kouzuki Hiyori",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Denjiro",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Raizo",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Kawamatsu",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Inuarashi",
+        "role": "admiral",
+        "rank_level": 8
+      },
+      {
+        "page": "Aramaki",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Marco",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Shimotsuki Yasuie",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Toko",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Tsurujo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hyougoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Minatomo (Wano)",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Komachiyo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Kurozumi Tama",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Speed",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Holed'em",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Who's-Who",
+        "role": "subordinate",
+        "rank_level": 4
+      },
+      {
+        "page": "Kikunojo",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Cho",
+        "role": "boss",
+        "rank_level": 10
+      },
+      {
+        "page": "Onimaru",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": [
+      "Kaidou",
+      "New Onigashima Project",
+      "shogun",
+      "explosive",
+      "raid on Onigashima",
+      "Fire Festival"
+    ]
+  },
+  "Yonta Maria Grand Fleet": {
+    "members": [
+      {
+        "page": "Orlumbus",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Agyo",
+        "role": "leader",
+        "rank_level": 10
+      },
+      {
+        "page": "Issho",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Yosaku": {
+    "members": [
+      {
+        "page": "Johnny",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Arlong",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Dracule Mihawk",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Billy (Bandit)",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Dick",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Harry",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Usopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nami",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fullbody",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Sanji",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Jinbe",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Momoo",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Nojiko",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Hatchan",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Porche",
+        "role": "member",
+        "rank_level": 2
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Zeff": {
+    "members": [
+      {
+        "page": "Sanji",
+        "role": "captain",
+        "rank_level": 10
+      },
+      {
+        "page": "Charlotte Pudding",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vinsmoke Judge",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Gin",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Fullbody",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shanks",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Dracule Mihawk",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Kuroobi",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Banban",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Shiki",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Monkey D. Luffy",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Krieg",
+        "role": "don",
+        "rank_level": 10
+      },
+      {
+        "page": "Pearl",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Patty",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Vegapunk",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Roronoa Zoro",
+        "role": "subordinate",
+        "rank_level": 4
+      },
+      {
+        "page": "Monkey D. Garp",
+        "role": "subordinate",
+        "rank_level": 4
+      },
+      {
+        "page": "Gol D. Roger",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Yasopp",
+        "role": "member",
+        "rank_level": 2
+      },
+      {
+        "page": "Laboon",
+        "role": "king",
+        "rank_level": 10
+      },
+      {
+        "page": "Crocus",
+        "role": "king",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  },
+  "Zenny Pirates": {
+    "members": [
+      {
+        "page": "Zenny",
+        "role": "captain",
+        "rank_level": 10
+      }
+    ],
+    "allies": [],
+    "enemies": []
+  }
+}

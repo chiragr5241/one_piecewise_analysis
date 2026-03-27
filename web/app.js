@@ -49,6 +49,11 @@ function setupNav() {
                 setTimeout(() => initGraph(), 0);
             }
             if (btn.dataset.section === 'raster') drawRaster();
+            if (btn.dataset.section === 'custom-network' && !cnInitialized) {
+                loadMultiplexData().then(() => {
+                    if (MPLEX) setTimeout(() => setupCustomNetwork(), 0);
+                });
+            }
         });
     });
 }
@@ -946,6 +951,502 @@ function buildEgoNetwork(centerNode, connections) {
             egoCy.fit(undefined, 20);
         }, 100);
     });
+}
+
+// ---- Custom Network (Multiplex Graph) ----
+let MPLEX = null;  // multiplex data
+let cnCy = null;   // cytoscape instance for custom network
+let cnEdgeIndex = null;  // pre-built edge index for custom network
+let cnInitialized = false;
+
+async function loadMultiplexData() {
+    if (MPLEX) return;
+    const status = document.getElementById('cn-status');
+    status.textContent = 'Loading multiplex network data...';
+    try {
+        const resp = await fetch('data/multiplex_network.json');
+        MPLEX = await resp.json();
+        status.textContent = `Loaded: ${MPLEX.nodes.length} characters, ${Object.keys(MPLEX.layers).length} edge layers`;
+    } catch (e) {
+        status.textContent = 'Error loading multiplex data. Run build_multiplex_network.py first.';
+        return;
+    }
+}
+
+function setupCustomNetwork() {
+    if (cnInitialized) return;
+    cnInitialized = true;
+
+    // Build layer sliders
+    const slidersDiv = document.getElementById('cn-layer-sliders');
+    const meta = MPLEX.layer_meta;
+    slidersDiv.innerHTML = Object.entries(meta).map(([key, m]) => `
+        <div class="layer-slider-item">
+            <div class="layer-dot" style="background:${m.color}"></div>
+            <span class="layer-name">${m.label}</span>
+            <input type="range" id="cn-w-${key}" min="0" max="100" value="${Math.round(m.default_weight * 100)}" step="1">
+            <span class="layer-val" id="cn-wv-${key}">${m.default_weight.toFixed(2)}</span>
+        </div>
+    `).join('');
+
+    // Slider input events
+    Object.keys(meta).forEach(key => {
+        const slider = document.getElementById(`cn-w-${key}`);
+        const valSpan = document.getElementById(`cn-wv-${key}`);
+        slider.addEventListener('input', () => {
+            valSpan.textContent = (slider.value / 100).toFixed(2);
+        });
+        slider.addEventListener('change', () => {
+            rebuildCustomGraph();
+        });
+    });
+
+    // Presets
+    const presets = {
+        balanced: { coappearance: 25, arc_overlap: 15, affiliation: 20, relationship: 20, hierarchy: 10, conflict: 10 },
+        coappearance: { coappearance: 70, arc_overlap: 30, affiliation: 0, relationship: 0, hierarchy: 0, conflict: 0 },
+        narrative: { coappearance: 10, arc_overlap: 10, affiliation: 15, relationship: 40, hierarchy: 5, conflict: 20 },
+        faction: { coappearance: 10, arc_overlap: 5, affiliation: 50, relationship: 15, hierarchy: 15, conflict: 5 },
+        conflict: { coappearance: 5, arc_overlap: 5, affiliation: 10, relationship: 20, hierarchy: 0, conflict: 60 },
+    };
+
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const preset = presets[btn.dataset.preset];
+            if (!preset) return;
+            document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            Object.entries(preset).forEach(([key, val]) => {
+                const slider = document.getElementById(`cn-w-${key}`);
+                if (slider) {
+                    slider.value = val;
+                    document.getElementById(`cn-wv-${key}`).textContent = (val / 100).toFixed(2);
+                }
+            });
+            rebuildCustomGraph();
+        });
+    });
+
+    // Control events
+    document.getElementById('cn-min-episodes').addEventListener('input', e => {
+        document.getElementById('cn-min-episodes-val').textContent = e.target.value;
+    });
+    document.getElementById('cn-min-episodes').addEventListener('change', () => rebuildCustomGraph());
+    document.getElementById('cn-threshold').addEventListener('input', e => {
+        document.getElementById('cn-threshold-val').textContent = (e.target.value / 100).toFixed(2);
+    });
+    document.getElementById('cn-threshold').addEventListener('change', () => rebuildCustomGraph());
+    document.getElementById('cn-color-by').addEventListener('change', () => recolorCustomGraph());
+    document.getElementById('cn-layout').addEventListener('change', () => {
+        if (cnCy) cnCy.layout(getCnLayoutOptions()).run();
+    });
+    document.getElementById('cn-rebuild-btn').addEventListener('click', () => rebuildCustomGraph());
+    document.getElementById('cn-reset-btn').addEventListener('click', () => {
+        if (cnCy) cnCy.fit(undefined, 30);
+    });
+    document.getElementById('cn-close-panel').addEventListener('click', () => {
+        document.getElementById('cn-info-panel').classList.add('hidden');
+    });
+
+    // Build legend
+    const legend = document.getElementById('cn-edge-legend');
+    legend.innerHTML = `
+        <div class="legend-item"><div class="legend-line" style="background:#6bcb77"></div>Positive</div>
+        <div class="legend-item"><div class="legend-line" style="background:#ff6b6b"></div>Negative</div>
+        <div class="legend-item"><div class="legend-line" style="background:rgba(255,255,255,0.3)"></div>Neutral</div>
+    `;
+
+    // Render layer stats
+    renderLayerStats();
+
+    // Build initial graph
+    rebuildCustomGraph();
+}
+
+function getLayerWeights() {
+    const weights = {};
+    Object.keys(MPLEX.layer_meta).forEach(key => {
+        const slider = document.getElementById(`cn-w-${key}`);
+        weights[key] = slider ? parseInt(slider.value) / 100 : 0;
+    });
+    return weights;
+}
+
+function computeCompositeEdges(weights, minEps, threshold) {
+    const nodeMap = new Map();
+    MPLEX.nodes.forEach(n => nodeMap.set(n.id, n));
+
+    // Filter nodes
+    const validNodes = new Set(MPLEX.nodes.filter(n => n.episodes >= minEps).map(n => n.id));
+
+    // Accumulate weighted scores
+    const edgeScores = new Map();
+    const edgeDetails = new Map();
+
+    Object.entries(MPLEX.layers).forEach(([layerName, edges]) => {
+        const w = weights[layerName] || 0;
+        if (w === 0) return;
+
+        edges.forEach(e => {
+            if (!validNodes.has(e.s) || !validNodes.has(e.t)) return;
+            const key = e.s < e.t ? `${e.s}|${e.t}` : `${e.t}|${e.s}`;
+            const current = edgeScores.get(key) || 0;
+            edgeScores.set(key, current + w * e.w);
+
+            // Track per-layer contributions
+            if (!edgeDetails.has(key)) edgeDetails.set(key, {});
+            const det = edgeDetails.get(key);
+            det[layerName] = (det[layerName] || 0) + e.w;
+        });
+    });
+
+    // Filter by threshold and format
+    const result = [];
+    edgeScores.forEach((score, key) => {
+        if (Math.abs(score) >= threshold) {
+            const [s, t] = key.split('|');
+            result.push({
+                source: s,
+                target: t,
+                weight: score,
+                details: edgeDetails.get(key) || {},
+            });
+        }
+    });
+
+    result.sort((a, b) => Math.abs(b.weight) - Math.abs(a.weight));
+    return { edges: result, validNodes };
+}
+
+function rebuildCustomGraph() {
+    if (!MPLEX) return;
+    const status = document.getElementById('cn-status');
+    const weights = getLayerWeights();
+    const minEps = parseInt(document.getElementById('cn-min-episodes').value);
+    const threshold = parseInt(document.getElementById('cn-threshold').value) / 100;
+
+    status.textContent = 'Computing composite edges...';
+
+    const { edges, validNodes } = computeCompositeEdges(weights, minEps, threshold);
+
+    // Only include nodes that have edges
+    const nodesWithEdges = new Set();
+    edges.forEach(e => { nodesWithEdges.add(e.source); nodesWithEdges.add(e.target); });
+
+    const nodeMap = new Map();
+    MPLEX.nodes.forEach(n => nodeMap.set(n.id, n));
+
+    const colorBy = document.getElementById('cn-color-by').value;
+    const elements = [];
+
+    // Build edge index for this graph
+    cnEdgeIndex = new Map();
+
+    nodesWithEdges.forEach(id => {
+        const n = nodeMap.get(id);
+        if (!n) return;
+        elements.push({
+            group: 'nodes',
+            data: {
+                id: n.id,
+                label: n.label,
+                episodes: n.episodes,
+                faction: n.faction,
+                size: 8 + Math.sqrt(n.episodes) * 2.5,
+                color: getCnNodeColor(n, colorBy),
+            }
+        });
+    });
+
+    // Find max absolute weight for edge scaling
+    const maxAbsW = Math.max(0.01, ...edges.map(e => Math.abs(e.weight)));
+
+    edges.forEach(e => {
+        const normW = e.weight / maxAbsW;
+        const isNegative = e.weight < 0;
+        let edgeColor;
+        if (isNegative) {
+            const intensity = Math.min(1, Math.abs(normW));
+            edgeColor = `rgba(255,${Math.round(107 * (1 - intensity))},${Math.round(107 * (1 - intensity))},${0.3 + intensity * 0.5})`;
+        } else {
+            const intensity = Math.min(1, normW);
+            edgeColor = `rgba(${Math.round(107 * (1 - intensity))},${Math.round(203 * intensity + 100 * (1 - intensity))},${Math.round(119 * intensity + 200 * (1 - intensity))},${0.2 + intensity * 0.6})`;
+        }
+
+        elements.push({
+            group: 'edges',
+            data: {
+                source: e.source,
+                target: e.target,
+                weight: e.weight,
+                absWeight: Math.abs(e.weight),
+                edgeColor: edgeColor,
+                details: e.details,
+            }
+        });
+
+        // Build edge index
+        if (!cnEdgeIndex.has(e.source)) cnEdgeIndex.set(e.source, []);
+        if (!cnEdgeIndex.has(e.target)) cnEdgeIndex.set(e.target, []);
+        cnEdgeIndex.get(e.source).push({ otherId: e.target, weight: e.weight, details: e.details });
+        cnEdgeIndex.get(e.target).push({ otherId: e.source, weight: e.weight, details: e.details });
+    });
+
+    status.textContent = `Building: ${nodesWithEdges.size} nodes, ${edges.length} edges...`;
+
+    if (cnCy) cnCy.destroy();
+
+    cnCy = cytoscape({
+        container: document.getElementById('cn-cy'),
+        elements: elements,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'background-color': 'data(color)',
+                    'label': 'data(label)',
+                    'width': 'data(size)',
+                    'height': 'data(size)',
+                    'font-size': 8,
+                    'color': '#ccc',
+                    'text-valign': 'bottom',
+                    'text-margin-y': 4,
+                    'min-zoomed-font-size': 10,
+                    'text-outline-width': 2,
+                    'text-outline-color': '#0a0a0f',
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 'mapData(absWeight, 0, ' + maxAbsW.toFixed(4) + ', 0.5, 4)',
+                    'line-color': 'data(edgeColor)',
+                    'curve-style': 'haystack',
+                    'opacity': 0.8,
+                }
+            },
+            {
+                selector: 'node:selected',
+                style: {
+                    'border-width': 3, 'border-color': '#ffd93d',
+                    'font-size': 14, 'color': '#fff', 'z-index': 999,
+                }
+            },
+            {
+                selector: 'node.highlighted',
+                style: { 'border-width': 2, 'border-color': '#ffd93d', 'opacity': 1, 'z-index': 100 }
+            },
+            {
+                selector: 'node.dimmed',
+                style: { 'opacity': 0.1 }
+            },
+            {
+                selector: 'edge.highlighted',
+                style: { 'opacity': 1, 'width': 3, 'z-index': 100 }
+            },
+            {
+                selector: 'edge.dimmed',
+                style: { 'opacity': 0.03 }
+            }
+        ],
+        layout: getCnLayoutOptions(),
+        wheelSensitivity: 0.3,
+        maxZoom: 10,
+        minZoom: 0.1,
+    });
+
+    // Node click handler
+    cnCy.on('tap', 'node', function (evt) {
+        const node = evt.target;
+        showCnNodeInfo(node.data());
+        // Highlight neighbors
+        cnCy.startBatch();
+        cnCy.elements().removeClass('highlighted dimmed');
+        const neighborhood = node.neighborhood().add(node);
+        cnCy.elements().not(neighborhood).addClass('dimmed');
+        neighborhood.addClass('highlighted');
+        cnCy.endBatch();
+    });
+
+    cnCy.on('tap', function (evt) {
+        if (evt.target === cnCy) {
+            document.getElementById('cn-info-panel').classList.add('hidden');
+            cnCy.startBatch();
+            cnCy.elements().removeClass('highlighted dimmed');
+            cnCy.endBatch();
+        }
+    });
+
+    status.textContent = `${nodesWithEdges.size} characters, ${edges.length} edges | Weights: ${Object.entries(weights).filter(([,v]) => v > 0).map(([k,v]) => `${k}=${v.toFixed(2)}`).join(', ')}`;
+
+    // Update top pairs
+    renderCnTopPairs(edges);
+
+    // Ensure graph fits the container
+    cnCy.resize();
+    cnCy.fit(undefined, 30);
+}
+
+function getCnNodeColor(node, colorBy) {
+    if (colorBy === 'faction') {
+        const factionColors = {
+            'Straw Hat Pirates': '#00bfff', 'Marines': '#4a9edd',
+            'Beasts Pirates': '#e05555', 'Charlotte Family': '#ff69b4',
+            'Whitebeard Pirates': '#f39c12', 'World Government': '#a870d4',
+            'Revolutionary Army': '#27ae60', 'Baroque Works': '#d4ac0d',
+            'Blackbeard Pirates': '#888888', 'Donquixote Pirates': '#e74c3c',
+            'Roger Pirates': '#d4a017', 'Big Mom Pirates': '#ff69b4',
+            'Red Hair Pirates': '#e05555', 'Heart Pirates': '#3498db',
+            'Kid Pirates': '#e67e22', 'Cross Guild': '#c0392b',
+            'Kuja Pirates': '#e84393', 'Sun Pirates': '#f9ca24',
+            'Kozuki Family': '#6bcb77', 'Vinsmoke Family': '#686de0',
+        };
+        return factionColors[node.faction] || '#7f8fa6';
+    }
+    if (colorBy === 'edge_sentiment') {
+        // Color by average edge sentiment (positive = green, negative = red)
+        return '#7fbfff';
+    }
+    return '#7fbfff';
+}
+
+function recolorCustomGraph() {
+    if (!cnCy || !MPLEX) return;
+    const colorBy = document.getElementById('cn-color-by').value;
+    const nodeMap = new Map();
+    MPLEX.nodes.forEach(n => nodeMap.set(n.id, n));
+
+    cnCy.startBatch();
+    cnCy.nodes().forEach(node => {
+        const n = nodeMap.get(node.data('id'));
+        if (n) node.data('color', getCnNodeColor(n, colorBy));
+    });
+    cnCy.endBatch();
+}
+
+function getCnLayoutOptions() {
+    const layout = document.getElementById('cn-layout').value;
+    if (layout === 'cose') {
+        return {
+            name: 'cose', animate: false,
+            nodeRepulsion: 600000, idealEdgeLength: 90,
+            gravity: 0.25, numIter: 500,
+            nodeDimensionsIncludeLabels: false,
+        };
+    }
+    if (layout === 'concentric') {
+        return {
+            name: 'concentric', animate: false,
+            concentric: node => node.data('episodes'),
+            levelWidth: () => 8,
+        };
+    }
+    return { name: layout, animate: false };
+}
+
+function showCnNodeInfo(data) {
+    const panel = document.getElementById('cn-info-panel');
+    panel.classList.remove('hidden');
+    document.getElementById('cn-panel-name').textContent = data.label;
+
+    const neighbors = cnEdgeIndex ? (cnEdgeIndex.get(data.id) || []) : [];
+    const connections = neighbors
+        .map(e => {
+            const nodeMap = new Map();
+            MPLEX.nodes.forEach(n => nodeMap.set(n.id, n));
+            const other = nodeMap.get(e.otherId);
+            return {
+                name: other ? other.label : e.otherId,
+                weight: e.weight,
+                details: e.details,
+            };
+        })
+        .sort((a, b) => Math.abs(b.weight) - Math.abs(a.weight))
+        .slice(0, 20);
+
+    const layerMeta = MPLEX.layer_meta;
+
+    document.getElementById('cn-panel-content').innerHTML = `
+        <div class="stat-row"><span class="label">Faction</span><span>${data.faction}</span></div>
+        <div class="stat-row"><span class="label">Episodes</span><span>${data.episodes}</span></div>
+        <div class="stat-row"><span class="label">Connections</span><span>${neighbors.length}</span></div>
+        <h4 style="margin-top:14px;font-size:14px;color:#ffd93d">Top Connections (Composite)</h4>
+        <ul class="connections-list">
+            ${connections.map(c => {
+                const color = c.weight >= 0 ? '#6bcb77' : '#ff6b6b';
+                const detailStr = Object.entries(c.details)
+                    .filter(([, v]) => Math.abs(v) > 0.01)
+                    .map(([k, v]) => `<span style="color:${layerMeta[k]?.color || '#888'}">${layerMeta[k]?.label || k}: ${v.toFixed(2)}</span>`)
+                    .join(' · ');
+                return `<li style="flex-direction:column;gap:2px">
+                    <div style="display:flex;justify-content:space-between;width:100%">
+                        <span>${c.name}</span>
+                        <span style="color:${color};font-weight:600">${c.weight.toFixed(3)}</span>
+                    </div>
+                    ${detailStr ? `<div style="font-size:11px;color:var(--text-dim)">${detailStr}</div>` : ''}
+                </li>`;
+            }).join('')}
+        </ul>
+    `;
+}
+
+function renderLayerStats() {
+    const container = document.getElementById('cn-layer-stats');
+    if (!MPLEX) return;
+
+    const rows = Object.entries(MPLEX.layer_meta).map(([key, meta]) => {
+        const edges = MPLEX.layers[key] || [];
+        const posCount = edges.filter(e => e.w > 0).length;
+        const negCount = edges.filter(e => e.w < 0).length;
+        const avgW = edges.length > 0 ? (edges.reduce((s, e) => s + Math.abs(e.w), 0) / edges.length) : 0;
+        return `<tr>
+            <td><span style="color:${meta.color};font-weight:600">${meta.label}</span></td>
+            <td>${edges.length.toLocaleString()}</td>
+            <td>${posCount.toLocaleString()}</td>
+            <td>${negCount.toLocaleString()}</td>
+            <td>${avgW.toFixed(3)}</td>
+            <td>${meta.signed ? 'Yes' : 'No'}</td>
+        </tr>`;
+    });
+
+    container.innerHTML = `<table>
+        <thead><tr><th>Layer</th><th>Edges</th><th>Positive</th><th>Negative</th><th>Avg |w|</th><th>Signed</th></tr></thead>
+        <tbody>${rows.join('')}</tbody>
+    </table>`;
+}
+
+function renderCnTopPairs(edges) {
+    const container = document.getElementById('cn-top-pairs');
+    if (!MPLEX) return;
+
+    const nodeMap = new Map();
+    MPLEX.nodes.forEach(n => nodeMap.set(n.id, n));
+
+    const top = edges.slice(0, 30);
+    container.innerHTML = `<table>
+        <thead><tr><th>#</th><th>Character 1</th><th>Character 2</th><th>Score</th><th>Dominant Layer</th></tr></thead>
+        <tbody>${top.map((e, i) => {
+            const n1 = nodeMap.get(e.source);
+            const n2 = nodeMap.get(e.target);
+            // Find dominant layer
+            let dominant = '';
+            let maxLayer = 0;
+            Object.entries(e.details).forEach(([k, v]) => {
+                if (Math.abs(v) > maxLayer) {
+                    maxLayer = Math.abs(v);
+                    dominant = MPLEX.layer_meta[k]?.label || k;
+                }
+            });
+            const color = e.weight >= 0 ? '#6bcb77' : '#ff6b6b';
+            return `<tr>
+                <td class="rank-num">${i + 1}</td>
+                <td>${n1 ? n1.label : e.source}</td>
+                <td>${n2 ? n2.label : e.target}</td>
+                <td style="color:${color};font-weight:600">${e.weight.toFixed(3)}</td>
+                <td>${dominant}</td>
+            </tr>`;
+        }).join('')}</tbody>
+    </table>`;
 }
 
 // ---- Init ----
